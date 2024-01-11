@@ -1,0 +1,7 @@
+"La trascrizione è il processo attraverso il quale l'RNA polimerasi legge un filamento di DNA e produce un filamento complementare di RNA pre-mRNA. Questo processo inizia nel nucleo con il legame dell'RNA polimerasi al promotore di un gene e procede con la sintesi di RNA nella direzione 5'→3'. Al termine della trascrizione, il pre-mRNA è modificato con l'aggiunta di un cappuccio al 5' e una coda di poliadenina al 3'.
+
+Lo splicing è il processo di maturazione dell'RNA che segue la trascrizione, in cui l'spliceosoma, un complesso di snRNPs e altre proteine, rimuove gli introni (generalmente iniziando con GU e finendo con AG) e unisce gli esoni per formare l'mRNA maturo. Il punto di ramificazione, contrassegnato da un adenina (A), gioca un ruolo cruciale nella formazione della struttura a lariat dell'introne durante lo splicing.
+
+Lo splicing alternativo permette la generazione di multiple isoforme di mRNA da un unico pre-mRNA, incrementando la diversità proteica senza aumentare il numero di geni. Questo avviene attraverso l'utilizzo di diversi siti di splicing, risultando nell'inclusione o esclusione di specifici esoni. Un esempio è il gene BAX, che può produrre 5 isoforme differenti attraverso lo splicing alternativo, influenzando la funzione della proteina risultante.
+
+Dopo lo splicing, gli mRNA maturi sono esportati dal nucleo nel citoplasma, dove avviene la traduzione, il processo di sintesi delle proteine guidato dai codoni dell'mRNA."
