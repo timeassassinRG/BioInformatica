@@ -1,0 +1,4912 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="type" attr.type="string"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="('AC000041.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006338.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008056.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC000065.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC000065.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004765.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007684.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009682.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC000120.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005072.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007216.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007494.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007878.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC000362.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002057.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002057.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC000374.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008883.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC001226.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005070.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005104.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007161.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007161.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002044.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008277.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008625.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002064.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009542.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002074.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010533.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002377.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010486.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002386.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004946.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002429.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008781.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002458.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007362.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009951.4', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002487.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007992.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009237.11', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002542.6', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008026.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009464.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002543.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004884.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC002558.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009927.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003077.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004825.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003092.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003092.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003681.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007496.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009152.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009303.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003973.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004869.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007333.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007491.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008164.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003984.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004862.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005252.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009901.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC003988.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004014.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004467.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004062.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006457.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004147.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004217.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009754.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004223.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008498.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004223.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005261.5', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004470.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004852.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006006.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006037.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006037.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006115.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006160.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006363.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008794.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008869.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010196.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010451.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004491.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008149.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009560.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004594.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004672.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007695.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009974.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004678.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008781.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007684.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009432.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004784.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006150.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009509.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009716.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004830.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004852.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004899.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005008.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005297.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005518.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009039.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009237.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009597.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009110.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009408.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009878.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004865.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007906.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004866.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009452.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008662.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007938.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006459.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004944.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007511.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010139.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC004972.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006043.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009965.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009597.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009623.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010266.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008895.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008985.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005153.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005176.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010460.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005183.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005343.4', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008662.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005921.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005357.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008571.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005476.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007601.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005480.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009303.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005540.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007431.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005695.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006566.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009228.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005828.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005972.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010261.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005828.6', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005828.7', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005839.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009090.6', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005856.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007494.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008507.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009141.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC005912.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006055.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008568.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009161.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009487.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006059.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010320.4', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006511.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006238.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009951.5', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006328.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006335.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006450.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006453.4', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010634.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009558.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006458.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007631.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009237.16', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC006478.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007000.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009032.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007012.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007333.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007151.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009554.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007342.6', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007222.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007370.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008103.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009135.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010145.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010486.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007336.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007336.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008885.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007347.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007496.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007378.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007390.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007431.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007494.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007533.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009884.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007431.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007448.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007736.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009480.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007954.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009093.7', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009994.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007849.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008810.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007563.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009800.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007608.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007608.4', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007608.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007728.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC007998.5', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008056.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008937.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008277.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008406.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008413.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008705.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008534.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008565.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010251.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008892.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010359.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC008742.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010328.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010240.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009152.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009487.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010105.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009268.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010359.3', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009269.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009269.5', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009803.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC009803.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010247.1', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AC010247.2', 'expression')">
+  <data key="d0">expression</data>
+</node>
+<node id="('AACS', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BCL2L11', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ABAT', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAD1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ABCB11', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ABLIM1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BRMS1L', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ABCG5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC007563.5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC011747.4', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AIM2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ALOX12P2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ANGEL2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ANKRD46', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ARHGAP23', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('B4GALT7', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BNIPL', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BTN3A1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C17orf80', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C3orf56', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CARD9', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CATSPERB', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CCDC125', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC005682.5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APOA5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C1orf141', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC006372.5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CACYBPP3', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAPN9', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC079922.2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTS5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APOM', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ARMCX4', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C4orf45', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC019118.3', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C1orf64', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC067956.1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC073343.13', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC079779.4', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AKAP8L', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC091801.1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAMSAP1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AC116609.1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ACADSB', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ACTA2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ACTN4P1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ACTR5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTS12', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTS3', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTS6', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADRA1A', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTS8', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C10orf76', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAV1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ADAMTSL3', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AGER', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ALS2CL', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ALS2CR12', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ANP32A', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APOL5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BAALC-AS2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BNIP3L', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BRD1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BRINP2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BTBD2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BTD', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BZW2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C1QTNF7', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AIRE', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APTX', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AK1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AK4P2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ATP8A1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AKIRIN1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ALDH5A1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ALG6', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C19orf26', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ATP6V1D', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AMPD1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C4orf50', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APOBEC1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ARHGEF26', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ATM', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAP1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ANO9', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APAF1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('APOBEC3A', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BTN1A1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('B3GNT7', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C21orf62-AS1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C6orf136', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ARID3B', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CASK', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ARSE', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C1orf123', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ASUN', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('ATP1A1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('AVPI1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('B3GNTL1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C19orf48', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BAG2', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BAI1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BFSP1', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('BMP5', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAMKMT', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CBLB', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C14orf183', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAMK2B', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C5orf15', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C7orf43', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CAPN7', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C1orf53', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CASP12', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('C7orf60', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('CASP4', 'methylation')">
+  <data key="d0">methylation</data>
+</node>
+<node id="('A2ML1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('APC', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ASPM', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCA1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL6A3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCA12', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCA13', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BSN', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1E', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCB11', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ACVR2A', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTS16', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTS2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTS9', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AHNAK2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AKAP9', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ANKRD11', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARID1B', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ASH1L', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATM', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BIRC6', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1B', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CASR', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CD93', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CDH11', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CDON', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CEP192', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CMYA5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL7A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCA2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BMPR2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BRAF', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCA4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BNC2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNTNAP5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCB5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCC1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CELSR2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCC2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRV1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ABCC4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ACACB', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ACTN1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AK9', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BCL9L', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BLM', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BRD3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1G', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CHD8', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL27A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ALMS1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ANK1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTS17', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTS7', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1F', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CFAP46', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADAMTSL1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADCY5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADCY9', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRA3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRB2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRB3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRD1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRG4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ADGRG6', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AHNAK', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL5A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AFDN', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AGAP1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ANK2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARMC4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP10A', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP2A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BCORL1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1H', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CAMTA1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CASZ1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CELSR1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ALPK2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('APOB', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CEP290', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CFAP251', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CHST15', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CLASP1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNOT1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ALK', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ALS2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AMOTL1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1A', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CDH23', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ANK3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ASCC3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('AP3D1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL18A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('APAF1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARAP1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARHGAP33', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARHGEF10', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARPP21', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP12A', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP1A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP8A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BAHCC1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BCL9', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BRCA2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BRPF3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('C3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA2D3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CADPS', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CAPN5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CARD11', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CC2D2A', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CCDC88C', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CD109', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CDH4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CELSR3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CENPJ', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CEP89', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CIITA', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CLCA4', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CLUH', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNGB3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNTN1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNTN5', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNTN6', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL11A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL12A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL16A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL1A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL22A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL4A1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL5A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL6A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL6A6', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ARFGEF3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ASTN2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CADM1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CASP8AP2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CD163', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CDK5RAP2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('COL4A2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('ATP2B3', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('BOD1L1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CIT', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CLIP1', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CACNA1C', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CNTNAP2', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CAD', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CFAP65', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CEMIP', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<node id="('CEP250', 'mutation')">
+  <data key="d0">mutation</data>
+</node>
+<edge source="('AC000041.1', 'expression')" target="('AC006338.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000041.1', 'expression')" target="('AC008056.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006338.2', 'expression')" target="('AC008056.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008056.3', 'expression')" target="('AC008056.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000065.1', 'expression')" target="('AC000065.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000065.1', 'expression')" target="('AC004765.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000065.1', 'expression')" target="('AC007684.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000065.1', 'expression')" target="('AC009682.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC001226.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC005070.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC005104.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC007684.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC007684.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC009432.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004765.1', 'expression')" target="('AC009682.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007684.1', 'expression')" target="('AC008498.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007684.1', 'expression')" target="('AC009682.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009682.1', 'expression')" target="('AC003681.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009682.1', 'expression')" target="('AC009432.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009682.1', 'expression')" target="('AC009542.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000120.1', 'expression')" target="('AC005072.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000120.1', 'expression')" target="('AC007216.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000120.1', 'expression')" target="('AC007494.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000120.1', 'expression')" target="('AC007878.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005072.1', 'expression')" target="('AC007216.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005072.1', 'expression')" target="('AC008026.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005072.1', 'expression')" target="('AC008895.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005072.1', 'expression')" target="('AC008985.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC007151.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC007496.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC007736.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC007878.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC008026.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.2', 'expression')" target="('AC008498.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC004223.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC005153.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC005261.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC007390.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC007448.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC007496.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC008026.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007878.1', 'expression')" target="('AC008985.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000362.1', 'expression')" target="('AC002057.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000362.1', 'expression')" target="('AC002057.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002057.1', 'expression')" target="('AC000374.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002057.1', 'expression')" target="('AC002057.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002057.2', 'expression')" target="('AC000374.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC000374.1', 'expression')" target="('AC008883.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC001226.2', 'expression')" target="('AC005070.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC001226.2', 'expression')" target="('AC005104.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC001226.2', 'expression')" target="('AC007161.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC001226.2', 'expression')" target="('AC007161.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005070.3', 'expression')" target="('AC004884.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005070.3', 'expression')" target="('AC005104.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005070.3', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005104.2', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007161.1', 'expression')" target="('AC007342.6', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007161.1', 'expression')" target="('AC008507.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007161.2', 'expression')" target="('AC006059.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002044.3', 'expression')" target="('AC008277.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002044.3', 'expression')" target="('AC008625.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008277.1', 'expression')" target="('AC008507.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC005695.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC008277.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC008892.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC009228.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC009754.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC009994.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008625.1', 'expression')" target="('AC010359.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002064.2', 'expression')" target="('AC009542.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009542.1', 'expression')" target="('AC003681.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002074.2', 'expression')" target="('AC010533.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010533.1', 'expression')" target="('AC009951.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002377.1', 'expression')" target="('AC010486.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010486.3', 'expression')" target="('AC007012.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010486.3', 'expression')" target="('AC007333.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010486.3', 'expression')" target="('AC010486.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002386.1', 'expression')" target="('AC004946.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004946.1', 'expression')" target="('AC004147.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004946.1', 'expression')" target="('AC010139.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002429.1', 'expression')" target="('AC008781.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002458.1', 'expression')" target="('AC007362.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002458.1', 'expression')" target="('AC009951.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007362.1', 'expression')" target="('AC006566.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007362.1', 'expression')" target="('AC009951.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009951.4', 'expression')" target="('AC007728.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009951.4', 'expression')" target="('AC008534.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009951.4', 'expression')" target="('AC009951.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002487.1', 'expression')" target="('AC007992.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002487.1', 'expression')" target="('AC009237.11', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007992.1', 'expression')" target="('AC009237.11', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009237.11', 'expression')" target="('AC008164.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002542.6', 'expression')" target="('AC008026.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002542.6', 'expression')" target="('AC009464.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC004672.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC004865.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC005921.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC007494.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC007496.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC007695.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC008498.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008026.3', 'expression')" target="('AC009464.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009464.1', 'expression')" target="('AC004865.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009464.1', 'expression')" target="('AC007695.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002543.1', 'expression')" target="('AC004884.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004884.2', 'expression')" target="('AC007938.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004884.2', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC002558.3', 'expression')" target="('AC009927.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009927.1', 'expression')" target="('AC003681.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009927.1', 'expression')" target="('AC005912.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009927.1', 'expression')" target="('AC009303.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009927.1', 'expression')" target="('AC009716.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003077.1', 'expression')" target="('AC004825.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004825.3', 'expression')" target="('AC009509.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004825.3', 'expression')" target="('AC009716.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003092.1', 'expression')" target="('AC003092.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003681.1', 'expression')" target="('AC007496.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003681.1', 'expression')" target="('AC009152.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003681.1', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC007347.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC007390.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC007448.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC007494.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC007496.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC008498.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC009093.7', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC009152.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC009303.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.3', 'expression')" target="('AC009994.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009152.3', 'expression')" target="('AC009152.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009303.3', 'expression')" target="('AC004223.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009303.3', 'expression')" target="('AC005153.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003973.1', 'expression')" target="('AC004869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003973.1', 'expression')" target="('AC007333.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003973.1', 'expression')" target="('AC007491.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003973.1', 'expression')" target="('AC008164.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004869.1', 'expression')" target="('AC003984.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004869.1', 'expression')" target="('AC005252.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004869.1', 'expression')" target="('AC007333.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004869.1', 'expression')" target="('AC008662.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007491.1', 'expression')" target="('AC006037.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003984.1', 'expression')" target="('AC004862.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003984.1', 'expression')" target="('AC005252.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003984.1', 'expression')" target="('AC009901.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005252.1', 'expression')" target="('AC004830.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005252.1', 'expression')" target="('AC004852.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005252.1', 'expression')" target="('AC008662.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC003988.1', 'expression')" target="('AC004014.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004014.2', 'expression')" target="('AC004467.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004062.1', 'expression')" target="('AC006457.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006457.1', 'expression')" target="('AC008662.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006457.1', 'expression')" target="('AC008869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006457.1', 'expression')" target="('AC009558.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006457.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004217.2', 'expression')" target="('AC009754.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009754.1', 'expression')" target="('AC007448.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009754.1', 'expression')" target="('AC009994.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004223.1', 'expression')" target="('AC008498.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008498.2', 'expression')" target="('AC004672.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008498.2', 'expression')" target="('AC005921.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008498.2', 'expression')" target="('AC007151.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008498.2', 'expression')" target="('AC007494.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008498.2', 'expression')" target="('AC007496.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004223.2', 'expression')" target="('AC005261.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC004852.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006006.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006037.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006037.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006115.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006160.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC006363.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC008794.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC008869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004470.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC006006.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC006115.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC008869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC009110.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC009408.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC009878.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.3', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006037.1', 'expression')" target="('AC006363.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC006160.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC006363.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC006511.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC008794.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC008869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006115.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006160.2', 'expression')" target="('AC006363.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006160.2', 'expression')" target="('AC008794.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006160.2', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006160.2', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006363.1', 'expression')" target="('AC008794.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006363.1', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006363.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008794.1', 'expression')" target="('AC006511.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008794.1', 'expression')" target="('AC008869.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008794.1', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008794.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008869.1', 'expression')" target="('AC008662.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008869.1', 'expression')" target="('AC009408.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008869.1', 'expression')" target="('AC009558.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008869.1', 'expression')" target="('AC010196.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008869.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010196.1', 'expression')" target="('AC006511.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010196.1', 'expression')" target="('AC010451.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010451.3', 'expression')" target="('AC006511.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010451.3', 'expression')" target="('AC008662.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010451.3', 'expression')" target="('AC009558.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004491.1', 'expression')" target="('AC008149.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004491.1', 'expression')" target="('AC009560.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008149.2', 'expression')" target="('AC008937.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008149.2', 'expression')" target="('AC009560.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004594.1', 'expression')" target="('AC004672.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004672.1', 'expression')" target="('AC007695.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004672.1', 'expression')" target="('AC009974.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007695.1', 'expression')" target="('AC004865.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007695.1', 'expression')" target="('AC007151.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004678.1', 'expression')" target="('AC008781.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008781.1', 'expression')" target="('AC007998.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008781.1', 'expression')" target="('AC008742.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007684.2', 'expression')" target="('AC007494.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007684.2', 'expression')" target="('AC009480.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004784.1', 'expression')" target="('AC006150.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009509.3', 'expression')" target="('AC005912.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009509.3', 'expression')" target="('AC009716.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC004899.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC005008.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC005297.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC005518.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC009039.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC009237.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004852.2', 'expression')" target="('AC009597.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004899.2', 'expression')" target="('AC006459.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004899.2', 'expression')" target="('AC009237.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC005297.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC005518.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC009039.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC009597.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC009597.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC009623.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005008.2', 'expression')" target="('AC010266.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005297.2', 'expression')" target="('AC005518.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005297.2', 'expression')" target="('AC009039.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005297.2', 'expression')" target="('AC009237.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005297.2', 'expression')" target="('AC009597.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005297.2', 'expression')" target="('AC009597.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005518.1', 'expression')" target="('AC009039.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005518.1', 'expression')" target="('AC009597.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005518.1', 'expression')" target="('AC009597.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009039.1', 'expression')" target="('AC009237.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009039.1', 'expression')" target="('AC009597.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009039.1', 'expression')" target="('AC009597.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009597.1', 'expression')" target="('AC006043.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004865.1', 'expression')" target="('AC007906.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007906.1', 'expression')" target="('AC008507.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004866.1', 'expression')" target="('AC009452.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009452.1', 'expression')" target="('AC005357.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009452.1', 'expression')" target="('AC008571.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008662.2', 'expression')" target="('AC009558.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006459.1', 'expression')" target="('AC006478.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004944.1', 'expression')" target="('AC007511.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007511.1', 'expression')" target="('AC009161.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007511.1', 'expression')" target="('AC010266.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007511.1', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004972.1', 'expression')" target="('AC006043.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC004972.1', 'expression')" target="('AC009965.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006043.1', 'expression')" target="('AC009965.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010266.1', 'expression')" target="('AC006453.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010266.1', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008985.1', 'expression')" target="('AC005153.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005176.2', 'expression')" target="('AC010460.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005183.1', 'expression')" target="('AC005343.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005343.4', 'expression')" target="('AC005921.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005357.1', 'expression')" target="('AC008571.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005476.1', 'expression')" target="('AC007601.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005480.1', 'expression')" target="('AC009303.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009303.2', 'expression')" target="('AC010240.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005540.1', 'expression')" target="('AC007431.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005695.2', 'expression')" target="('AC006566.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005695.2', 'expression')" target="('AC009228.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005828.2', 'expression')" target="('AC005972.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005828.2', 'expression')" target="('AC010261.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005972.1', 'expression')" target="('AC005828.7', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005972.1', 'expression')" target="('AC010261.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005828.6', 'expression')" target="('AC005828.7', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005839.1', 'expression')" target="('AC009090.6', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005856.1', 'expression')" target="('AC007494.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005856.1', 'expression')" target="('AC008507.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC005856.1', 'expression')" target="('AC009141.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.3', 'expression')" target="('AC007336.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.3', 'expression')" target="('AC007448.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.3', 'expression')" target="('AC008507.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007494.3', 'expression')" target="('AC009480.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008507.2', 'expression')" target="('AC007342.6', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006055.1', 'expression')" target="('AC008568.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006055.1', 'expression')" target="('AC009161.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006055.1', 'expression')" target="('AC009487.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008568.2', 'expression')" target="('AC009161.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008568.2', 'expression')" target="('AC009487.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008568.2', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009161.1', 'expression')" target="('AC009487.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009161.1', 'expression')" target="('AC009487.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009161.1', 'expression')" target="('AC010105.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009161.1', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009487.3', 'expression')" target="('AC009487.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009487.3', 'expression')" target="('AC010105.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009487.3', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006059.1', 'expression')" target="('AC010320.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006238.2', 'expression')" target="('AC009951.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009951.5', 'expression')" target="('AC008534.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006328.1', 'expression')" target="('AC006335.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006328.1', 'expression')" target="('AC006450.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006335.1', 'expression')" target="('AC006450.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006453.4', 'expression')" target="('AC010634.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010634.1', 'expression')" target="('AC009487.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006458.1', 'expression')" target="('AC007631.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC006458.1', 'expression')" target="('AC009237.16', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007631.1', 'expression')" target="('AC009237.16', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007000.2', 'expression')" target="('AC009032.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007012.1', 'expression')" target="('AC007333.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007333.2', 'expression')" target="('AC010486.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007151.1', 'expression')" target="('AC009554.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009554.1', 'expression')" target="('AC007378.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009554.1', 'expression')" target="('AC008277.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009554.1', 'expression')" target="('AC008406.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007222.1', 'expression')" target="('AC007370.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007222.1', 'expression')" target="('AC008103.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007222.1', 'expression')" target="('AC009135.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007222.1', 'expression')" target="('AC010145.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007370.2', 'expression')" target="('AC008103.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007370.2', 'expression')" target="('AC009135.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007370.2', 'expression')" target="('AC010145.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008103.1', 'expression')" target="('AC009135.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008103.1', 'expression')" target="('AC010145.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009135.2', 'expression')" target="('AC010145.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007336.3', 'expression')" target="('AC008885.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007347.1', 'expression')" target="('AC007496.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007496.1', 'expression')" target="('AC007954.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007431.1', 'expression')" target="('AC007494.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007431.1', 'expression')" target="('AC007533.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007431.1', 'expression')" target="('AC009884.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007533.1', 'expression')" target="('AC007431.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007533.1', 'expression')" target="('AC007849.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007533.1', 'expression')" target="('AC008810.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009480.1', 'expression')" target="('AC009268.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009480.1', 'expression')" target="('AC010359.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007563.3', 'expression')" target="('AC009800.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007608.1', 'expression')" target="('AC007608.4', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC007608.4', 'expression')" target="('AC007608.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008937.2', 'expression')" target="('AC010240.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008413.2', 'expression')" target="('AC008705.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008565.1', 'expression')" target="('AC010251.1', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC008742.1', 'expression')" target="('AC010328.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009268.1', 'expression')" target="('AC010359.3', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009269.2', 'expression')" target="('AC009269.5', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC009803.1', 'expression')" target="('AC009803.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AC010247.1', 'expression')" target="('AC010247.2', 'expression')">
+  <data key="d1">expression</data>
+</edge>
+<edge source="('AACS', 'methylation')" target="('BCL2L11', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BCL2L11', 'methylation')" target="('AC073343.13', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABAT', 'methylation')" target="('ADAD1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAD1', 'methylation')" target="('AIM2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAD1', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAD1', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCB11', 'methylation')" target="('ABLIM1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCB11', 'methylation')" target="('BRMS1L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCB11', 'methylation')" target="('ABCB11', 'mutation')">
+  <data key="d1">interlayer</data>
+</edge>
+<edge source="('ABLIM1', 'methylation')" target="('BRMS1L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRMS1L', 'methylation')" target="('AIM2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRMS1L', 'methylation')" target="('ALS2CL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRMS1L', 'methylation')" target="('ANKRD46', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRMS1L', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRMS1L', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('AC007563.5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('AC011747.4', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('AIM2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('ALOX12P2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('ANGEL2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('ANKRD46', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('ARHGAP23', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('B4GALT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('C3orf56', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('CARD9', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ABCG5', 'methylation')" target="('CCDC125', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC007563.5', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('AC079922.2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('ADAMTS5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('AIM2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('ANGEL2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('APOM', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('ARHGAP23', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('ARMCX4', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('B4GALT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('C4orf45', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('C5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC011747.4', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('AC019118.3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('AC079922.2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ADAMTS12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ADAMTS8', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ALS2CL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ANGEL2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ANKRD46', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ANP32A', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('APOL5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('ARHGAP23', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('B4GALT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BAALC-AS2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BNIP3L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BRD1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BRINP2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BTBD2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BTD', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('BZW2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('C10orf76', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('C1QTNF7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('C3orf56', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIM2', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ALOX12P2', 'methylation')" target="('C19orf26', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('ACTR5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('ALG6', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('APOBEC1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('ARHGAP23', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('ARHGEF26', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('ATM', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('B4GALT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('BZW2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('CAP1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANGEL2', 'methylation')" target="('CCDC125', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANKRD46', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANKRD46', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ANKRD46', 'methylation')" target="('C3orf56', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('AC079779.4', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('ADAMTS6', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('AGER', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('B4GALT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('BNIP3L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('BTBD2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('C21orf62-AS1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('C6orf136', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('CARD9', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARHGAP23', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('ACTN4P1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('AKIRIN1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('ALDH5A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('ANO9', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('APOA5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('BNIPL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('C19orf26', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('C19orf48', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('B4GALT7', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('AK1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('BTN3A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('BZW2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('CAMKMT', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BNIPL', 'methylation')" target="('CBLB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('AC019118.3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('AC067956.1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('AC079922.2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('AC116609.1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ADAMTS12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ADAMTS3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ADAMTS8', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ADAMTSL3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ALS2CL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('APAF1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('APOL5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('ASUN', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('BFSP1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('BNIP3L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('BTBD2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('BZW2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C10orf76', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C14orf183', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C17orf80', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C1QTNF7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C1orf64', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('C3orf56', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('CAMK2B', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTN3A1', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('AC019118.3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('AC079922.2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ACADSB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ACTA2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ADAMTS12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ADAMTS8', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ALS2CL', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('APAF1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('APOL5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('BAI1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('BNIP3L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('BRINP2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('BTBD2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('BZW2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C10orf76', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C14orf183', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C1QTNF7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C1orf141', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C3orf56', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C5orf15', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('C7orf43', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('CAPN7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C17orf80', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C3orf56', 'methylation')" target="('APOL5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C3orf56', 'methylation')" target="('CASP12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CARD9', 'methylation')" target="('ADAMTS6', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CARD9', 'methylation')" target="('ADRA1A', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CARD9', 'methylation')" target="('CATSPERB', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CATSPERB', 'methylation')" target="('ADAMTS6', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CATSPERB', 'methylation')" target="('BTBD2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CATSPERB', 'methylation')" target="('C6orf136', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('CATSPERB', 'methylation')" target="('CCDC125', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC005682.5', 'methylation')" target="('APOA5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC005682.5', 'methylation')" target="('C1orf141', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('APOA5', 'methylation')" target="('ALDH5A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C1orf141', 'methylation')" target="('C1QTNF7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC006372.5', 'methylation')" target="('CACYBPP3', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC006372.5', 'methylation')" target="('CAPN9', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC079922.2', 'methylation')" target="('AKAP8L', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC079922.2', 'methylation')" target="('ARMCX4', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC019118.3', 'methylation')" target="('C1orf64', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AC091801.1', 'methylation')" target="('CAMSAP1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAMTS6', 'methylation')" target="('ADRA1A', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAMTS8', 'methylation')" target="('C10orf76', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ADAMTS8', 'methylation')" target="('CAV1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C10orf76', 'methylation')" target="('ALS2CR12', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ALS2CL', 'methylation')" target="('ATP6V1D', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('APOL5', 'methylation')" target="('B3GNT7', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BRINP2', 'methylation')" target="('C14orf183', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BTBD2', 'methylation')" target="('BMP5', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('BZW2', 'methylation')" target="('CAP1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C1QTNF7', 'methylation')" target="('B3GNTL1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C1QTNF7', 'methylation')" target="('C1orf53', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AIRE', 'methylation')" target="('APTX', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AK4P2', 'methylation')" target="('ATP8A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('AMPD1', 'methylation')" target="('C4orf50', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ATM', 'methylation')" target="('ATM', 'mutation')">
+  <data key="d1">interlayer</data>
+</edge>
+<edge source="('APAF1', 'methylation')" target="('APAF1', 'mutation')">
+  <data key="d1">interlayer</data>
+</edge>
+<edge source="('APOBEC3A', 'methylation')" target="('BTN1A1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARID3B', 'methylation')" target="('CASK', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ARSE', 'methylation')" target="('C1orf123', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('ATP1A1', 'methylation')" target="('AVPI1', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C19orf48', 'methylation')" target="('BAG2', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('C7orf60', 'methylation')" target="('CASP4', 'methylation')">
+  <data key="d1">methylation</data>
+</edge>
+<edge source="('A2ML1', 'mutation')" target="('APC', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('A2ML1', 'mutation')" target="('ASPM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCA1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCA12', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCA13', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCA4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCB11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCB5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ABCC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ACACB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ACTN1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ACVR2A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADAMTS16', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADAMTS2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADAMTS7', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADAMTS9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADAMTSL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADCY9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADGRB2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADGRB3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADGRD1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADGRG4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ALK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ALS2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('AMOTL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('AP3D1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('APAF1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARAP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARHGAP33', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARHGEF10', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ARPP21', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ASCC3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ASPM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ATP12A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ATP1A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('ATP8A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BAHCC1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BCL9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BRCA2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BRPF3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('BSN', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('C3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CACNA2D3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CADPS', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CAMTA1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CAPN5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CARD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CC2D2A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CCDC88C', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CD109', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CDH11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CELSR3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CENPJ', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CEP89', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CHST15', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CIITA', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CLASP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CLCA4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CLUH', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CNGB3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CNTN1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CNTN5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CNTN6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL11A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL16A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL18A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL1A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL22A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL27A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL4A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL5A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL6A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL6A3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL6A6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('APC', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ABCA13', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ADAMTS9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CAPN5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('CNOT1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASPM', 'mutation')" target="('COL6A3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA1', 'mutation')" target="('COL6A3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ABCA13', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ABCA2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ABCC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ADAMTS2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ADAMTS9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ADGRG6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('AP3D1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('ATP1A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BCL9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('BSN', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CACNA2D3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CAD', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CAPN5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CARD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CEP250', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CNOT1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CNTNAP2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('COL18A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL6A3', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA12', 'mutation')" target="('ABCA13', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA12', 'mutation')" target="('BSN', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA12', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ABCB11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ACVR2A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ADAMTS16', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ADAMTS2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ADAMTS9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CASR', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CD93', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CDH11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CEP192', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA13', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ABCA2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ABCA4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ACVR2A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CACNA1E', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CADM1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CARD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('CLIP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('COL27A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BSN', 'mutation')" target="('COL6A6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ABCB11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ABCC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ACTN1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ACVR2A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ADAMTS9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ADGRG6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ASCC3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('ATP2A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('BCL9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CAPN5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CENPJ', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CHST15', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CIITA', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CNTNAP2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1E', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('BCL9L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('BLM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('BRD3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('CEP192', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('CHD8', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('COL27A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ACVR2A', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS16', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS16', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS16', 'mutation')" target="('ANKRD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS16', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS2', 'mutation')" target="('AHNAK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS2', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS2', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADAMTS9', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ABCA4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ADGRA3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ADGRG6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('AGAP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('AKAP9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ALPK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CEP290', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CFAP251', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CHST15', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CLASP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('CNOT1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK2', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AKAP9', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AKAP9', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AKAP9', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AKAP9', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AKAP9', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ARID1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ASCC3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ASH1L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANKRD11', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ARID1B', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ARID1B', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ARID1B', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ARID1B', 'mutation')" target="('CHST15', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ARID1B', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('ATM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ASH1L', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('ABCA4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('ADGRA3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('ATP2A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('BIRC6', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('BRCA2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CACNA1B', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CADM1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CASP8AP2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CD163', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CDK5RAP2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CEP290', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('COL27A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATM', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BIRC6', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('CDON', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1B', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('ADGRA3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CASP8AP2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CMYA5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDON', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CEP192', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CEP192', 'mutation')" target="('CEMIP', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('ANK1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('CEP290', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CMYA5', 'mutation')" target="('COL7A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('ACACB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('ALPK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL7A1', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA2', 'mutation')" target="('BMPR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA2', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('ATP2B3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('BLM', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('BOD1L1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('BRAF', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CARD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CHD8', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CIT', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CLIP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('COL4A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BMPR2', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ADAMTS17', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ADAMTSL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('AFDN', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('AK9', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('AP3D1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ARFGEF3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ASTN2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ATP2A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('ATP2B3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('BAHCC1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('BRCA2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CACNA1C', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CARD11', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CHD8', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CIITA', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CLASP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CLIP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('COL18A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('COL4A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BRAF', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA4', 'mutation')" target="('BNC2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCA4', 'mutation')" target="('CNTNAP5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BNC2', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BNC2', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BNC2', 'mutation')" target="('CNOT1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('C3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CNTNAP5', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCC1', 'mutation')" target="('CELSR2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR2', 'mutation')" target="('ADCY5', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR2', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR2', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR2', 'mutation')" target="('CFAP65', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR2', 'mutation')" target="('CIITA', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ABCC2', 'mutation')" target="('ADGRV1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADGRV1', 'mutation')" target="('ACACB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADGRV1', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADGRV1', 'mutation')" target="('ALMS1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ADGRV1', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AK9', 'mutation')" target="('BCL9L', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BCL9L', 'mutation')" target="('CACNA1G', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1G', 'mutation')" target="('AHNAK', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1G', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CHD8', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANK1', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANK1', 'mutation')" target="('CACNA1F', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANK1', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANK1', 'mutation')" target="('CFAP46', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1F', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('ARMC4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('ATP2A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('CAMTA1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('CELSR1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AHNAK', 'mutation')" target="('COL5A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('ANK2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('ATP10A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('CAD', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('COL5A1', 'mutation')" target="('CLASP1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ANK2', 'mutation')" target="('BCORL1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATP10A', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATP10A', 'mutation')" target="('CADM1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATP10A', 'mutation')" target="('COL4A2', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATP2A1', 'mutation')" target="('CACNA1H', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('ATP2A1', 'mutation')" target="('CASZ1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('BCORL1', 'mutation')" target="('APOB', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1H', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1H', 'mutation')" target="('BAHCC1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1H', 'mutation')" target="('COL18A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CASZ1', 'mutation')" target="('AP3D1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CASZ1', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CASZ1', 'mutation')" target="('CDH4', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CASZ1', 'mutation')" target="('CIITA', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CELSR1', 'mutation')" target="('CACNA1A', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1A', 'mutation')" target="('AP3D1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1A', 'mutation')" target="('CDH23', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CACNA1A', 'mutation')" target="('COL12A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDH23', 'mutation')" target="('ANK3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('AP3D1', 'mutation')" target="('COL18A1', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+<edge source="('CDH4', 'mutation')" target="('CELSR3', 'mutation')">
+  <data key="d1">mutation</data>
+</edge>
+</graph></graphml>
