@@ -6,6 +6,8 @@ library(muxViz)
 library(RColorBrewer)
 
 rm(list = ls())
+
+
 #Lettura del grafo completo
 grafo <- read_graph("multilayer.graphml", format = "graphml")
 #verifica Archi e nodi
@@ -32,7 +34,6 @@ layer_unici <- unique(layer_nodi)
 print(layer_unici)
 
 #Generate an edge-colored network
-# Raccogli tutti i nodi unici dai layer del tuo grafo
 tutti_i_nodi <- sort(unique(unlist(lapply(layer_nodi, unique))))
 
 # Inizializza nodeTensor come lista vuota di matrici sparse

@@ -1,0 +1,126 @@
+---
+title: "Multi Layer Graph Analysis"
+output: html_notebook
+---
+
+```{r}
+library(ggplot2)
+library(ggraph)
+library(grid)
+library(igraph)
+library(muxViz)
+library(RColorBrewer)
+```
+
+rm(list = ls())
+```{r}
+#Lettura del grafo completo
+grafo <- read_graph("multilayer.graphml", format = "graphml")
+#verifica Archi e nodi
+cat("numero di nodi nel grafo multilayer", gorder(grafo), "\n")
+cat("numer odi archi nel grafo multilayer", gsize(grafo))
+Nodes <- gorder(grafo)
+```
+```{r}
+# Estrai l'elenco dei nomi dei nodi dal grafo completo, manipolando la stringa dell'ID
+tutti_nodi <- sapply(V(grafo)$id, function(id) {
+  parti <- strsplit(gsub("[()']", "", id), ", ")[[1]]
+  nome_gene <- parti[1]
+  return(nome_gene)
+})
+
+# Elimina eventuali duplicati, se presenti
+tutti_nodi <- unique(tutti_nodi)
+```
+
+```{r}
+sottografo_expression_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
+  set_vertex_attr("name", value=tutti_nodi)
+
+sottografo_methylation_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
+  set_vertex_attr("name", value=tutti_nodi)
+
+sottografo_mutation_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
+  set_vertex_attr("name", value=tutti_nodi)
+
+aggiungi_archi_corrispondenti <- function(sottografo, grafo_originale, tipo) {
+  archi_da_aggiungere <- E(grafo_originale)[E(grafo_originale)$type == tipo]
+  if(length(archi_da_aggiungere) > 0) {
+    indici_nodi <- ends(grafo_originale, es = archi_da_aggiungere)
+    
+    for(i in 1:nrow(indici_nodi)) {
+      from_id <- indici_nodi[i, 1]
+      to_id <- indici_nodi[i, 2]
+      
+      # Ottiene i nomi dei nodi da e verso usando gli indici
+      from <- V(grafo_originale)$name[from_id]
+      to <- V(grafo_originale)$name[to_id]
+      
+      # Assicurati che 'from' e 'to' non siano NA
+      if(!is.na(from) && !is.na(to)) {
+        # Controlla se entrambi i nodi sono presenti in 'tutti_nodi' prima di aggiungere l'arco
+        if(from %in% V(sottografo)$name && to %in% V(sottografo)$name) {
+          # Aggiunge l'arco tra i nodi corrispondenti
+          sottografo <- add_edges(sottografo, c(which(V(sottografo)$name == from), which(V(sottografo)$name == to)))
+        }
+      }
+    }
+  }
+  return(sottografo)
+}
+
+
+# Applica la funzione per aggiungere gli archi ai sottografi
+sottografo_expression_allineato <- aggiungi_archi_corrispondenti(sottografo_expression_allineato, grafo, "expression")
+sottografo_methylation_allineato <- aggiungi_archi_corrispondenti(sottografo_methylation_allineato, grafo, "methylation")
+sottografo_mutation_allineato <- aggiungi_archi_corrispondenti(sottografo_mutation_allineato, grafo, "mutation")
+```
+
+
+```{r}
+#Network setup
+Layers <- 3
+layerCouplingStrength <- 1
+networkOfLayersType <- "categorical"
+layer.colors <- brewer.pal(3, "Set2")
+```
+
+```{r}
+nodeTensor <- list()
+for(l in 1:Layers){
+  nodeTensor[[l]] <- igraph::get.adjacency(g.list[[l]])
+}
+```
+
+```{r}
+#Define the network of layers
+layerTensor <-
+  BuildLayersTensor(
+    Layers = Layers,
+    OmegaParameter = layerCouplingStrength,
+    MultisliceType = networkOfLayersType
+  )
+```
+
+```{r}
+# Aggiusta le dimensioni delle matrici di adiacenza per assicurare la coerenza
+adjust_adjacency_matrix <- function(mat, total_nodes) {
+  # Crea una matrice quadrata con dimensioni pari al numero totale di nodi
+  # Inizializzata a 0 (nessuna connessione)
+  adjusted_mat <- matrix(0, nrow = total_nodes, ncol = total_nodes)
+  
+  # Sostituisci la porzione corrispondente con la matrice di adiacenza originale
+  dimnames(adjusted_mat) <- list(rownames(mat), colnames(mat))
+  adjusted_mat[rownames(mat), colnames(mat)] <- mat
+  
+  return(adjusted_mat)
+}
+
+# Numero totale di nodi nel grafo
+total_nodes <- gorder(grafo)
+
+# Regola le dimensioni di ciascuna matrice di adiacenza in 'nodeTensor'
+for(l in 1:Layers){
+  nodeTensor[[l]] <- adjust_adjacency_matrix(nodeTensor[[l]], total_nodes)
+}
+```
