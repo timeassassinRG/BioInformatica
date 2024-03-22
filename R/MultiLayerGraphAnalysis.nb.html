@@ -1754,38 +1754,297 @@ display: none;
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnZ3Bsb3QyKVxubGlicmFyeShnZ3JhcGgpXG5saWJyYXJ5KGdyaWQpXG5saWJyYXJ5KGlncmFwaClcbmxpYnJhcnkobXV4Vml6KVxubGlicmFyeShSQ29sb3JCcmV3ZXIpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnZ3Bsb3QyKVxubGlicmFyeShnZ3JhcGgpXG5saWJyYXJ5KGdyaWQpXG5saWJyYXJ5KGlncmFwaClcbmxpYnJhcnkobXV4Vml6KVxubGlicmFyeShSQ29sb3JCcmV3ZXIpXG5saWJyYXJ5KHByb2dyZXNzKVxuYGBgIn0= -->
 <pre class="r"><code>library(ggplot2)
 library(ggraph)
 library(grid)
 library(igraph)
 library(muxViz)
-library(RColorBrewer)</code></pre>
+library(RColorBrewer)
+library(progress)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>rm(list = ls())</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0xldHR1cmEgZGVsIGdyYWZvIGNvbXBsZXRvXG5ncmFmbyA8LSByZWFkX2dyYXBoKFwibXVsdGlsYXllci5ncmFwaG1sXCIsIGZvcm1hdCA9IFwiZ3JhcGhtbFwiKVxuI3ZlcmlmaWNhIEFyY2hpIGUgbm9kaVxuY2F0KFwibnVtZXJvIGRpIG5vZGkgbmVsIGdyYWZvIG11bHRpbGF5ZXJcIiwgZ29yZGVyKGdyYWZvKSwgXCJcXG5cIilcbmBgYCJ9 -->
-<pre class="r"><code>#Lettura del grafo completo
-grafo &lt;- read_graph(&quot;multilayer.graphml&quot;, format = &quot;graphml&quot;)
-#verifica Archi e nodi
-cat(&quot;numero di nodi nel grafo multilayer&quot;, gorder(grafo), &quot;\n&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoibnVtZXJvIGRpIG5vZGkgbmVsIGdyYWZvIG11bHRpbGF5ZXIgMTEwMjkgXG4ifQ== -->
-<pre><code>numero di nodi nel grafo multilayer 11029 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2F0KFwibnVtZXIgb2RpIGFyY2hpIG5lbCBncmFmbyBtdWx0aWxheWVyXCIsIGdzaXplKGdyYWZvKSlcbmBgYCJ9 -->
-<pre class="r"><code>cat(&quot;numer odi archi nel grafo multilayer&quot;, gsize(grafo))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoibnVtZXIgb2RpIGFyY2hpIG5lbCBncmFmbyBtdWx0aWxheWVyIDE0NDQzMVxuIn0= -->
-<pre><code>numer odi archi nel grafo multilayer 144431</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTm9kZXMgPC0gZ29yZGVyKGdyYWZvKVxuYGBgIn0= -->
-<pre class="r"><code>Nodes &lt;- gorder(grafo)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucm0obGlzdCA9IGxzKCkpXG4jTGV0dHVyYSBkZWwgZ3JhZm8gY29tcGxldG9cbmdyYWZvIDwtIHJlYWRfZ3JhcGgoXCJtdWx0aWxheWVyLmdyYXBobWxcIiwgZm9ybWF0ID0gXCJncmFwaG1sXCIpXG5gYGAifQ== -->
+<pre class="r"><code>rm(list = ls())
+#Lettura del grafo completo
+grafo &lt;- read_graph(&quot;multilayer.graphml&quot;, format = &quot;graphml&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFc3RyYWkgaSB0aXBpIGRpIGxheWVyIGUgaSBub21pIGRlaSBub2RpIHV0aWxpenphbmRvIGwnSUQgZGVsIG5vZG8sIHB1bGVuZG8gaSBkYXRpIGluIHVuIHVuaWNvIHBhc3NhZ2dpb1xubm9kaV9lX2xheWVyIDwtIHN0cnNwbGl0KFYoZ3JhZm8pJGlkLCBzcGxpdCA9IFwiJywgJ1wiLCBmaXhlZCA9IFRSVUUpXG5ub21pX25vZGkgPC0gdW5pcXVlKHNhcHBseShub2RpX2VfbGF5ZXIsIGZ1bmN0aW9uKHgpIGdzdWIoXCJbKCknXVwiLCBcIlwiLCB4WzFdKSkpXG50aXBpX2xheWVyIDwtIHVuaXF1ZShzYXBwbHkobm9kaV9lX2xheWVyLCBmdW5jdGlvbih4KSBnc3ViKFwiWycpXVwiLCBcIlwiLCB4WzJdKSkpXG5cbiMgU3RhbXBhIHBlciB2ZXJpZmljYVxucHJpbnQoaGVhZChub21pX25vZGkpKVxuYGBgIn0= -->
+<pre class="r"><code># Estrai i tipi di layer e i nomi dei nodi utilizzando l&#39;ID del nodo, pulendo i dati in un unico passaggio
+nodi_e_layer &lt;- strsplit(V(grafo)$id, split = &quot;&#39;, &#39;&quot;, fixed = TRUE)
+nomi_nodi &lt;- unique(sapply(nodi_e_layer, function(x) gsub(&quot;[()&#39;]&quot;, &quot;&quot;, x[1])))
+tipi_layer &lt;- unique(sapply(nodi_e_layer, function(x) gsub(&quot;[&#39;)]&quot;, &quot;&quot;, x[2])))
+
+# Stampa per verifica
+print(head(nomi_nodi))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiNVNfclJOQVwiICAgXCJSTkE1U1AyNTlcIiBcIlJOQTVTUDM4OFwiIFwiUk5BNVNQNTE0XCIgXCJSTkE1U1A1MlwiICBcIlJOQTVTUDYyXCIgXG4ifQ== -->
+<pre><code>[1] &quot;5S_rRNA&quot;   &quot;RNA5SP259&quot; &quot;RNA5SP388&quot; &quot;RNA5SP514&quot; &quot;RNA5SP52&quot;  &quot;RNA5SP62&quot; </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQodGlwaV9sYXllcilcbmBgYCJ9 -->
+<pre class="r"><code>print(tipi_layer)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZXhwcmVzc2lvblwiICBcIm1ldGh5bGF0aW9uXCIgXCJtdXRhdGlvblwiICAgXG4ifQ== -->
+<pre><code>[1] &quot;expression&quot;  &quot;methylation&quot; &quot;mutation&quot;   </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBZ2dpdW5naSB1biBhdHRyaWJ1dG8gJ25hbWUnIGEgY2lhc2N1biBub2RvIG5lbCBncmFmbyBvcmlnaW5hbGUgY29udGVuZW50ZSBzb2xvIGlsIG5vbWUgZGVsIGdlbmVcblYoZ3JhZm8pJG5hbWUgPC0gc2FwcGx5KFYoZ3JhZm8pJGlkLCBmdW5jdGlvbihpZCkge1xuICAjIEVzdHJhaSBzb2xvIGlsIG5vbWUgZGVsIGdlbmUgZGFsbCdJRCBkZWwgbm9kb1xuICBub21lX2dlbmUgPC0gZ3N1YihcIlsoKSddXCIsIFwiXCIsIHN0cnNwbGl0KGlkLCBcIiwgXCIpW1sxXV1bMV0pXG4gIG5vbWVfZ2VuZVxufSlcblxuIyBWZXJpZmljYSBjaGUgbCdhdHRyaWJ1dG8gJ25hbWUnIHNpYSBzdGF0byBhZ2dpdW50byBjb3JyZXR0YW1lbnRlXG5oZWFkKFYoZ3JhZm8pJG5hbWUpXG5gYGAifQ== -->
+<pre class="r"><code># Aggiungi un attributo &#39;name&#39; a ciascun nodo nel grafo originale contenente solo il nome del gene
+V(grafo)$name &lt;- sapply(V(grafo)$id, function(id) {
+  # Estrai solo il nome del gene dall&#39;ID del nodo
+  nome_gene &lt;- gsub(&quot;[()&#39;]&quot;, &quot;&quot;, strsplit(id, &quot;, &quot;)[[1]][1])
+  nome_gene
+})
+
+# Verifica che l&#39;attributo &#39;name&#39; sia stato aggiunto correttamente
+head(V(grafo)$name)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiNVNfclJOQVwiICAgXCJSTkE1U1AyNTlcIiBcIlJOQTVTUDM4OFwiIFwiUk5BNVNQNTE0XCIgXCJSTkE1U1A1MlwiICBcIlJOQTVTUDYyXCIgXG4ifQ== -->
+<pre><code>[1] &quot;5S_rRNA&quot;   &quot;RNA5SP259&quot; &quot;RNA5SP388&quot; &quot;RNA5SP514&quot; &quot;RNA5SP52&quot;  &quot;RNA5SP62&quot; </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBQcmVwYXJhIHVuIHNldCBjb21wbGV0byBkaSBub2RpIHBlciBvZ25pIHRpcG8gZGkgbGF5ZXJcbm5vZGlfY29tcGxldGlfcGVyX2xheWVyIDwtIGV4cGFuZC5ncmlkKG5vbWlfbm9kaSwgdGlwaV9sYXllcilcbmNvbG5hbWVzKG5vZGlfY29tcGxldGlfcGVyX2xheWVyKSA8LSBjKFwibm9tZVwiLCBcImxheWVyXCIpXG5gYGAifQ== -->
+<pre class="r"><code># Prepara un set completo di nodi per ogni tipo di layer
+nodi_completi_per_layer &lt;- expand.grid(nomi_nodi, tipi_layer)
+colnames(nodi_completi_per_layer) &lt;- c(&quot;nome&quot;, &quot;layer&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc290dG9ncmFmaSA8LSBsaXN0KClcbmZvciAobGF5ZXIgaW4gdGlwaV9sYXllcikge1xuICAjIENyZWEgdW4gc290dG9ncmFmbyB2dW90b1xuICBzb3R0b2dyYWZvIDwtIG1ha2VfZW1wdHlfZ3JhcGgobiA9IGxlbmd0aChub21pX25vZGkpKVxuICAjIEFzc2VnbmEgaSBub21pIGRlaSBub2RpXG4gIFYoc290dG9ncmFmbykkbmFtZSA8LSBub21pX25vZGlcbiAgIyBTYWx2YSBpbCBzb3R0b2dyYWZvIGluaXppYWxpenphdG9cbiAgc290dG9ncmFmaVtbbGF5ZXJdXSA8LSBzb3R0b2dyYWZvXG59XG5gYGAifQ== -->
+<pre class="r"><code>sottografi &lt;- list()
+for (layer in tipi_layer) {
+  # Crea un sottografo vuoto
+  sottografo &lt;- make_empty_graph(n = length(nomi_nodi))
+  # Assegna i nomi dei nodi
+  V(sottografo)$name &lt;- nomi_nodi
+  # Salva il sottografo inizializzato
+  sottografi[[layer]] &lt;- sottografo
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBwcmVjYWxjb2xvIGRlZ2xpIGluZGljaVxuaW5kaWNlX25vZGkgPC0gbGlzdCgpXG5mb3IobGF5ZXIgaW4gdGlwaV9sYXllcikge1xuICBub21pX25vZGlfbGF5ZXJfc3BlY2lmaWNpIDwtIFYoc290dG9ncmFmaVtbbGF5ZXJdXSkkbmFtZVxuICBpbmRpY2Vfbm9kaVtbbGF5ZXJdXSA8LSBzZXROYW1lcyhzZXFfYWxvbmcobm9taV9ub2RpX2xheWVyX3NwZWNpZmljaSksIG5vbWlfbm9kaV9sYXllcl9zcGVjaWZpY2kpXG59XG5gYGAifQ== -->
+<pre class="r"><code># precalcolo degli indici
+indice_nodi &lt;- list()
+for(layer in tipi_layer) {
+  nomi_nodi_layer_specifici &lt;- V(sottografi[[layer]])$name
+  indice_nodi[[layer]] &lt;- setNames(seq_along(nomi_nodi_layer_specifici), nomi_nodi_layer_specifici)
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yKGUgaW4gRShncmFmbykpIHtcbiAgaWYoZSAlJSAxMDAgPT0gMCkge1xuICAgIGNhdChcImFyY286IFwiLCBlLCBcIi8xNDQ0MzEgXFxuXCIpXG4gIH1cbiAgbm9kaV9lbmRzIDwtIGVuZHMoZ3JhZm8sIGUpXG4gIHNvcmdlbnRlIDwtIFYoZ3JhZm8pW25vZGlfZW5kc1sxXV0kbmFtZVxuICBkZXN0aW5hemlvbmUgPC0gVihncmFmbylbbm9kaV9lbmRzWzJdXSRuYW1lXG4gIHRpcG9fbGF5ZXIgPC0gRShncmFmbylbZV0kdHlwZVxuICBpZih0aXBvX2xheWVyICE9IFwiaW50ZXJsYXllclwiKSB7XG4gICAgaW5kaWNlX3NvcmdlbnRlIDwtIGluZGljZV9ub2RpW1t0aXBvX2xheWVyXV1bc29yZ2VudGVdXG4gICAgaW5kaWNlX2Rlc3RpbmF6aW9uZSA8LSBpbmRpY2Vfbm9kaVtbdGlwb19sYXllcl1dW2Rlc3RpbmF6aW9uZV1cbiAgICBzb3R0b2dyYWZpW1t0aXBvX2xheWVyXV0gPC0gYWRkX2VkZ2VzKHNvdHRvZ3JhZmlbW3RpcG9fbGF5ZXJdXSwgYyhpbmRpY2Vfc29yZ2VudGUsIGluZGljZV9kZXN0aW5hemlvbmUpKVxuICB9XG59XG5gYGAifQ== -->
+<pre class="r"><code>for(e in E(grafo)) {
+  if(e %% 100 == 0) {
+    cat(&quot;arco: &quot;, e, &quot;/144431 \n&quot;)
+  }
+  nodi_ends &lt;- ends(grafo, e)
+  sorgente &lt;- V(grafo)[nodi_ends[1]]$name
+  destinazione &lt;- V(grafo)[nodi_ends[2]]$name
+  tipo_layer &lt;- E(grafo)[e]$type
+  if(tipo_layer != &quot;interlayer&quot;) {
+    indice_sorgente &lt;- indice_nodi[[tipo_layer]][sorgente]
+    indice_destinazione &lt;- indice_nodi[[tipo_layer]][destinazione]
+    sottografi[[tipo_layer]] &lt;- add_edges(sottografi[[tipo_layer]], c(indice_sorgente, indice_destinazione))
+  }
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiYXJjbzogIDEwMCAvMTQ0NDMxIFxuYXJjbzogIDIwMCAvMTQ0NDMxIFxuYXJjbzogIDMwMCAvMTQ0NDMxIFxuYXJjbzogIDQwMCAvMTQ0NDMxIFxuYXJjbzogIDUwMCAvMTQ0NDMxIFxuYXJjbzogIDYwMCAvMTQ0NDMxIFxuYXJjbzogIDcwMCAvMTQ0NDMxIFxuYXJjbzogIDgwMCAvMTQ0NDMxIFxuYXJjbzogIDkwMCAvMTQ0NDMxIFxuYXJjbzogIDEwMDAgLzE0NDQzMSBcbmFyY286ICAxMTAwIC8xNDQ0MzEgXG5hcmNvOiAgMTIwMCAvMTQ0NDMxIFxuYXJjbzogIDEzMDAgLzE0NDQzMSBcbmFyY286ICAxNDAwIC8xNDQ0MzEgXG5hcmNvOiAgMTUwMCAvMTQ0NDMxIFxuYXJjbzogIDE2MDAgLzE0NDQzMSBcbmFyY286ICAxNzAwIC8xNDQ0MzEgXG5hcmNvOiAgMTgwMCAvMTQ0NDMxIFxuYXJjbzogIDE5MDAgLzE0NDQzMSBcbmFyY286ICAyMDAwIC8xNDQ0MzEgXG5hcmNvOiAgMjEwMCAvMTQ0NDMxIFxuYXJjbzogIDIyMDAgLzE0NDQzMSBcbmFyY286ICAyMzAwIC8xNDQ0MzEgXG5hcmNvOiAgMjQwMCAvMTQ0NDMxIFxuYXJjbzogIDI1MDAgLzE0NDQzMSBcbmFyY286ICAyNjAwIC8xNDQ0MzEgXG5hcmNvOiAgMjcwMCAvMTQ0NDMxIFxuYXJjbzogIDI4MDAgLzE0NDQzMSBcbmFyY286ICAyOTAwIC8xNDQ0MzEgXG5hcmNvOiAgMzAwMCAvMTQ0NDMxIFxuYXJjbzogIDMxMDAgLzE0NDQzMSBcbmFyY286ICAzMjAwIC8xNDQ0MzEgXG5hcmNvOiAgMzMwMCAvMTQ0NDMxIFxuYXJjbzogIDM0MDAgLzE0NDQzMSBcbmFyY286ICAzNTAwIC8xNDQ0MzEgXG5hcmNvOiAgMzYwMCAvMTQ0NDMxIFxuYXJjbzogIDM3MDAgLzE0NDQzMSBcbmFyY286ICAzODAwIC8xNDQ0MzEgXG5hcmNvOiAgMzkwMCAvMTQ0NDMxIFxuYXJjbzogIDQwMDAgLzE0NDQzMSBcbmFyY286ICA0MTAwIC8xNDQ0MzEgXG5hcmNvOiAgNDIwMCAvMTQ0NDMxIFxuYXJjbzogIDQzMDAgLzE0NDQzMSBcbmFyY286ICA0NDAwIC8xNDQ0MzEgXG5hcmNvOiAgNDUwMCAvMTQ0NDMxIFxuYXJjbzogIDQ2MDAgLzE0NDQzMSBcbmFyY286ICA0NzAwIC8xNDQ0MzEgXG5hcmNvOiAgNDgwMCAvMTQ0NDMxIFxuYXJjbzogIDQ5MDAgLzE0NDQzMSBcbmFyY286ICA1MDAwIC8xNDQ0MzEgXG5hcmNvOiAgNTEwMCAvMTQ0NDMxIFxuYXJjbzogIDUyMDAgLzE0NDQzMSBcbmFyY286ICA1MzAwIC8xNDQ0MzEgXG5hcmNvOiAgNTQwMCAvMTQ0NDMxIFxuYXJjbzogIDU1MDAgLzE0NDQzMSBcbmFyY286ICA1NjAwIC8xNDQ0MzEgXG5hcmNvOiAgNTcwMCAvMTQ0NDMxIFxuYXJjbzogIDU4MDAgLzE0NDQzMSBcbmFyY286ICA1OTAwIC8xNDQ0MzEgXG5hcmNvOiAgNjAwMCAvMTQ0NDMxIFxuYXJjbzogIDYxMDAgLzE0NDQzMSBcbmFyY286ICA2MjAwIC8xNDQ0MzEgXG5hcmNvOiAgNjMwMCAvMTQ0NDMxIFxuYXJjbzogIDY0MDAgLzE0NDQzMSBcbmFyY286ICA2NTAwIC8xNDQ0MzEgXG5hcmNvOiAgNjYwMCAvMTQ0NDMxIFxuYXJjbzogIDY3MDAgLzE0NDQzMSBcbmFyY286ICA2ODAwIC8xNDQ0MzEgXG5hcmNvOiAgNjkwMCAvMTQ0NDMxIFxuYXJjbzogIDcwMDAgLzE0NDQzMSBcbmFyY286ICA3MTAwIC8xNDQ0MzEgXG5hcmNvOiAgNzIwMCAvMTQ0NDMxIFxuYXJjbzogIDczMDAgLzE0NDQzMSBcbmFyY286ICA3NDAwIC8xNDQ0MzEgXG5hcmNvOiAgNzUwMCAvMTQ0NDMxIFxuYXJjbzogIDc2MDAgLzE0NDQzMSBcbmFyY286ICA3NzAwIC8xNDQ0MzEgXG5hcmNvOiAgNzgwMCAvMTQ0NDMxIFxuYXJjbzogIDc5MDAgLzE0NDQzMSBcbmFyY286ICA4MDAwIC8xNDQ0MzEgXG5hcmNvOiAgODEwMCAvMTQ0NDMxIFxuYXJjbzogIDgyMDAgLzE0NDQzMSBcbmFyY286ICA4MzAwIC8xNDQ0MzEgXG5hcmNvOiAgODQwMCAvMTQ0NDMxIFxuYXJjbzogIDg1MDAgLzE0NDQzMSBcbmFyY286ICA4NjAwIC8xNDQ0MzEgXG5hcmNvOiAgODcwMCAvMTQ0NDMxIFxuYXJjbzogIDg4MDAgLzE0NDQzMSBcbmFyY286ICA4OTAwIC8xNDQ0MzEgXG5hcmNvOiAgOTAwMCAvMTQ0NDMxIFxuYXJjbzogIDkxMDAgLzE0NDQzMSBcbmFyY286ICA5MjAwIC8xNDQ0MzEgXG5hcmNvOiAgOTMwMCAvMTQ0NDMxIFxuYXJjbzogIDk0MDAgLzE0NDQzMSBcbmFyY286ICA5NTAwIC8xNDQ0MzEgXG5hcmNvOiAgOTYwMCAvMTQ0NDMxIFxuYXJjbzogIDk3MDAgLzE0NDQzMSBcbmFyY286ICA5ODAwIC8xNDQ0MzEgXG5hcmNvOiAgOTkwMCAvMTQ0NDMxIFxuYXJjbzogIDEwMDAwIC8xNDQ0MzEgXG5hcmNvOiAgMTAxMDAgLzE0NDQzMSBcbmFyY286ICAxMDIwMCAvMTQ0NDMxIFxuYXJjbzogIDEwMzAwIC8xNDQ0MzEgXG5hcmNvOiAgMTA0MDAgLzE0NDQzMSBcbmFyY286ICAxMDUwMCAvMTQ0NDMxIFxuYXJjbzogIDEwNjAwIC8xNDQ0MzEgXG5hcmNvOiAgMTA3MDAgLzE0NDQzMSBcbmFyY286ICAxMDgwMCAvMTQ0NDMxIFxuYXJjbzogIDEwOTAwIC8xNDQ0MzEgXG5hcmNvOiAgMTEwMDAgLzE0NDQzMSBcbmFyY286ICAxMTEwMCAvMTQ0NDMxIFxuYXJjbzogIDExMjAwIC8xNDQ0MzEgXG5hcmNvOiAgMTEzMDAgLzE0NDQzMSBcbmFyY286ICAxMTQwMCAvMTQ0NDMxIFxuYXJjbzogIDExNTAwIC8xNDQ0MzEgXG5hcmNvOiAgMTE2MDAgLzE0NDQzMSBcbmFyY286ICAxMTcwMCAvMTQ0NDMxIFxuYXJjbzogIDExODAwIC8xNDQ0MzEgXG4ifQ== -->
+<pre><code>arco:  100 /144431 
+arco:  200 /144431 
+arco:  300 /144431 
+arco:  400 /144431 
+arco:  500 /144431 
+arco:  600 /144431 
+arco:  700 /144431 
+arco:  800 /144431 
+arco:  900 /144431 
+arco:  1000 /144431 
+arco:  1100 /144431 
+arco:  1200 /144431 
+arco:  1300 /144431 
+arco:  1400 /144431 
+arco:  1500 /144431 
+arco:  1600 /144431 
+arco:  1700 /144431 
+arco:  1800 /144431 
+arco:  1900 /144431 
+arco:  2000 /144431 
+arco:  2100 /144431 
+arco:  2200 /144431 
+arco:  2300 /144431 
+arco:  2400 /144431 
+arco:  2500 /144431 
+arco:  2600 /144431 
+arco:  2700 /144431 
+arco:  2800 /144431 
+arco:  2900 /144431 
+arco:  3000 /144431 
+arco:  3100 /144431 
+arco:  3200 /144431 
+arco:  3300 /144431 
+arco:  3400 /144431 
+arco:  3500 /144431 
+arco:  3600 /144431 
+arco:  3700 /144431 
+arco:  3800 /144431 
+arco:  3900 /144431 
+arco:  4000 /144431 
+arco:  4100 /144431 
+arco:  4200 /144431 
+arco:  4300 /144431 
+arco:  4400 /144431 
+arco:  4500 /144431 
+arco:  4600 /144431 
+arco:  4700 /144431 
+arco:  4800 /144431 
+arco:  4900 /144431 
+arco:  5000 /144431 
+arco:  5100 /144431 
+arco:  5200 /144431 
+arco:  5300 /144431 
+arco:  5400 /144431 
+arco:  5500 /144431 
+arco:  5600 /144431 
+arco:  5700 /144431 
+arco:  5800 /144431 
+arco:  5900 /144431 
+arco:  6000 /144431 
+arco:  6100 /144431 
+arco:  6200 /144431 
+arco:  6300 /144431 
+arco:  6400 /144431 
+arco:  6500 /144431 
+arco:  6600 /144431 
+arco:  6700 /144431 
+arco:  6800 /144431 
+arco:  6900 /144431 
+arco:  7000 /144431 
+arco:  7100 /144431 
+arco:  7200 /144431 
+arco:  7300 /144431 
+arco:  7400 /144431 
+arco:  7500 /144431 
+arco:  7600 /144431 
+arco:  7700 /144431 
+arco:  7800 /144431 
+arco:  7900 /144431 
+arco:  8000 /144431 
+arco:  8100 /144431 
+arco:  8200 /144431 
+arco:  8300 /144431 
+arco:  8400 /144431 
+arco:  8500 /144431 
+arco:  8600 /144431 
+arco:  8700 /144431 
+arco:  8800 /144431 
+arco:  8900 /144431 
+arco:  9000 /144431 
+arco:  9100 /144431 
+arco:  9200 /144431 
+arco:  9300 /144431 
+arco:  9400 /144431 
+arco:  9500 /144431 
+arco:  9600 /144431 
+arco:  9700 /144431 
+arco:  9800 /144431 
+arco:  9900 /144431 
+arco:  10000 /144431 
+arco:  10100 /144431 
+arco:  10200 /144431 
+arco:  10300 /144431 
+arco:  10400 /144431 
+arco:  10500 /144431 
+arco:  10600 /144431 
+arco:  10700 /144431 
+arco:  10800 /144431 
+arco:  10900 /144431 
+arco:  11000 /144431 
+arco:  11100 /144431 
+arco:  11200 /144431 
+arco:  11300 /144431 
+arco:  11400 /144431 
+arco:  11500 /144431 
+arco:  11600 /144431 
+arco:  11700 /144431 
+arco:  11800 /144431 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyB2ZXJpZmljaGVcbiMgU3RhbXBhIGlsIG51bWVybyBkaSBub2RpIGUgYXJjaGkgcGVyIGNpYXNjdW4gc290dG9ncmFmb1xubGFwcGx5KHNvdHRvZ3JhZmksIGZ1bmN0aW9uKGcpIHtcbiAgbGlzdChudW1lcm9fbm9kaSA9IGdvcmRlcihnKSwgbnVtZXJvX2FyY2hpID0gZ3NpemUoZykpXG59KVxuYGBgIn0= -->
+<pre class="r"><code># verifiche
+# Stampa il numero di nodi e archi per ciascun sottografo
+lapply(sottografi, function(g) {
+  list(numero_nodi = gorder(g), numero_archi = gsize(g))
+})</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJGV4cHJlc3Npb25cbiRleHByZXNzaW9uJG51bWVyb19ub2RpXG5bMV0gMTA3MDdcblxuJGV4cHJlc3Npb24kbnVtZXJvX2FyY2hpXG5bMV0gMTE4MjVcblxuXG4kbWV0aHlsYXRpb25cbiRtZXRoeWxhdGlvbiRudW1lcm9fbm9kaVxuWzFdIDEwNzA3XG5cbiRtZXRoeWxhdGlvbiRudW1lcm9fYXJjaGlcblsxXSAwXG5cblxuJG11dGF0aW9uXG4kbXV0YXRpb24kbnVtZXJvX25vZGlcblsxXSAxMDcwN1xuXG4kbXV0YXRpb24kbnVtZXJvX2FyY2hpXG5bMV0gMFxuIn0= -->
+<pre><code>$expression
+$expression$numero_nodi
+[1] 10707
+
+$expression$numero_archi
+[1] 11825
+
+
+$methylation
+$methylation$numero_nodi
+[1] 10707
+
+$methylation$numero_archi
+[1] 0
+
+
+$mutation
+$mutation$numero_nodi
+[1] 10707
+
+$mutation$numero_archi
+[1] 0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBWZXJpZmljYSBsYSBwcmVzZW56YSBkaSB1biBub2RvIHNwZWNpZmljbyBpbiB1biBzb3R0b2dyYWZvXG5ub21lX25vZG9fc3BlY2lmaWNvIDwtIFwiKCdub21lX2dlbmUnLCAnZXhwcmVzc2lvbicpXCJcbmxheWVyID0gXCJleHByZXNzaW9uXCIgIyBBc3NpY3VyYXRpIGRpIHNvc3RpdHVpcmUgJ25vbWVfZ2VuZScgY29uIHVuIG5vbWUgZGkgZ2VuZSB2YWxpZG8gZSAnZXhwcmVzc2lvbicgY29uIGlsIGxheWVyIGNvcnJldHRvXG5pZihub21lX25vZG9fc3BlY2lmaWNvICVpbiUgVihzb3R0b2dyYWZpW1tsYXllcl1dKSRpZCkge1xuICBwcmludChwYXN0ZShcIklsIG5vZG9cIiwgbm9tZV9ub2RvX3NwZWNpZmljbywgXCLDqCBwcmVzZW50ZSBuZWwgc290dG9ncmFmb1wiLCBsYXllcikpXG59IGVsc2Uge1xuICBwcmludChwYXN0ZShcIklsIG5vZG9cIiwgbm9tZV9ub2RvX3NwZWNpZmljbywgXCJOT04gw6ggcHJlc2VudGUgbmVsIHNvdHRvZ3JhZm9cIiwgbGF5ZXIpKVxufVxuYGBgIn0= -->
+<pre class="r"><code># Verifica la presenza di un nodo specifico in un sottografo
+nome_nodo_specifico &lt;- &quot;(&#39;nome_gene&#39;, &#39;expression&#39;)&quot;
+layer = &quot;expression&quot; # Assicurati di sostituire &#39;nome_gene&#39; con un nome di gene valido e &#39;expression&#39; con il layer corretto
+if(nome_nodo_specifico %in% V(sottografi[[layer]])$id) {
+  print(paste(&quot;Il nodo&quot;, nome_nodo_specifico, &quot;è presente nel sottografo&quot;, layer))
+} else {
+  print(paste(&quot;Il nodo&quot;, nome_nodo_specifico, &quot;NON è presente nel sottografo&quot;, layer))
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiSWwgbm9kbyAoJ25vbWVfZ2VuZScsICdleHByZXNzaW9uJykgTk9OIMOoIHByZXNlbnRlIG5lbCBzb3R0b2dyYWZvIGV4cHJlc3Npb25cIlxuIn0= -->
+<pre><code>[1] &quot;Il nodo (&#39;nome_gene&#39;, &#39;expression&#39;) NON è presente nel sottografo expression&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBDb250cm9sbGEgYWxjdW5pIGFyY2hpIHBlciB1biBzb3R0b2dyYWZvIHNwZWNpZmljb1xuaGVhZChFKHNvdHRvZ3JhZmlbW2xheWVyXV0pKVxuYGBgIn0= -->
+<pre class="r"><code># Controlla alcuni archi per un sottografo specifico
+head(E(sottografi[[layer]]))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiKyA2LzExODI1IGVkZ2VzIGZyb20gODkzZGIyOCAodmVydGV4IG5hbWVzKTpcblsxXSA1U19yUk5BLT5STkE1U1AyNTkgNVNfclJOQS0+Uk5BNVNQMzg4IDVTX3JSTkEtPlJOQTVTUDUxNCA1U19yUk5BLT5STkE1U1A1MiAgNVNfclJOQS0+Uk5BNVNQNjIgIDVTX3JSTkEtPlJOQTVTUDc0IFxuIn0= -->
+<pre><code>+ 6/11825 edges from 893db28 (vertex names):
+[1] 5S_rRNA-&gt;RNA5SP259 5S_rRNA-&gt;RNA5SP388 5S_rRNA-&gt;RNA5SP514 5S_rRNA-&gt;RNA5SP52  5S_rRNA-&gt;RNA5SP62  5S_rRNA-&gt;RNA5SP74 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFc3RyYWkgbCdlbGVuY28gZGVpIG5vbWkgZGVpIG5vZGkgZGFsIGdyYWZvIGNvbXBsZXRvLCBtYW5pcG9sYW5kbyBsYSBzdHJpbmdhIGRlbGwnSURcbnR1dHRpX25vZGkgPC0gc2FwcGx5KFYoZ3JhZm8pJGlkLCBmdW5jdGlvbihpZCkge1xuICBwYXJ0aSA8LSBzdHJzcGxpdChnc3ViKFwiWygpJ11cIiwgXCJcIiwgaWQpLCBcIiwgXCIpW1sxXV1cbiAgbm9tZV9nZW5lIDwtIHBhcnRpWzFdXG4gIHJldHVybihub21lX2dlbmUpXG59KVxuXG4jIEVsaW1pbmEgZXZlbnR1YWxpIGR1cGxpY2F0aSwgc2UgcHJlc2VudGlcbnR1dHRpX25vZGkgPC0gdW5pcXVlKHR1dHRpX25vZGkpXG5gYGAifQ== -->
 <pre class="r"><code># Estrai l&#39;elenco dei nomi dei nodi dal grafo completo, manipolando la stringa dell&#39;ID
@@ -1802,15 +2061,18 @@ tutti_nodi &lt;- unique(tutti_nodi)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBBcHBsaWNhIGxhIGZ1bnppb25lIHBlciBhZ2dpdW5nZXJlIGdsaSBhcmNoaSBhaSBzb3R0b2dyYWZpXG5zb3R0b2dyYWZvX2V4cHJlc3Npb25fYWxsaW5lYXRvIDwtIGFnZ2l1bmdpX2FyY2hpX2NvcnJpc3BvbmRlbnRpKHNvdHRvZ3JhZm9fZXhwcmVzc2lvbl9hbGxpbmVhdG8sIGdyYWZvLCBcImV4cHJlc3Npb25cIilcblxuYGBgIn0= -->
-<pre class="r"><code># Applica la funzione per aggiungere gli archi ai sottografi
-sottografo_expression_allineato &lt;- aggiungi_archi_corrispondenti(sottografo_expression_allineato, grafo, &quot;expression&quot;)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWdnaXVuZ2lfbm9kaV9tYW5jYW50aSA8LSBmdW5jdGlvbihzb3R0b2dyYWZvLCBub2RpX2NvbXBsZXRpKSB7XG4gIG5vZGlfYXR0dWFsaSA8LSBWKHNvdHRvZ3JhZm8pJG5hbWVcbiAgbm9kaV9kYV9hZ2dpdW5nZXJlIDwtIHNldGRpZmYobm9kaV9jb21wbGV0aSwgbm9kaV9hdHR1YWxpKVxuICBcbiAgZm9yIChub2RvIGluIG5vZGlfZGFfYWdnaXVuZ2VyZSkge1xuICAgIHNvdHRvZ3JhZm8gPC0gYWRkX3ZlcnRpY2VzKHNvdHRvZ3JhZm8sIDEsIG5hbWUgPSBub2RvKVxuICB9XG4gIFxuICByZXR1cm4oc290dG9ncmFmbylcbn1cbmBgYCJ9 -->
+<pre class="r"><code>aggiungi_nodi_mancanti &lt;- function(sottografo, nodi_completi) {
+  nodi_attuali &lt;- V(sottografo)$name
+  nodi_da_aggiungere &lt;- setdiff(nodi_completi, nodi_attuali)
+  
+  for (nodo in nodi_da_aggiungere) {
+    sottografo &lt;- add_vertices(sottografo, 1, name = nodo)
+  }
+  
+  return(sottografo)
+}</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3JlIGluIGlmICghaXMubmEoZnJvbSkgJiYgIWlzLm5hKHRvKSkgeyA6IFxuICB2YWxvcmUgbWFuY2FudGUgZG92ZSDDqCByaWNoaWVzdG8gVFJVRS9GQUxTRVxuIn0= -->
-<pre><code>Errore in if (!is.na(from) &amp;&amp; !is.na(to)) { : 
-  valore mancante dove è richiesto TRUE/FALSE</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -1873,7 +2135,7 @@ for(l in 1:Layers){
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIk11bHRpIExheWVyIEdyYXBoIEFuYWx5c2lzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KYGBge3J9DQpsaWJyYXJ5KGdncGxvdDIpDQpsaWJyYXJ5KGdncmFwaCkNCmxpYnJhcnkoZ3JpZCkNCmxpYnJhcnkoaWdyYXBoKQ0KbGlicmFyeShtdXhWaXopDQpsaWJyYXJ5KFJDb2xvckJyZXdlcikNCmBgYA0KDQpybShsaXN0ID0gbHMoKSkNCmBgYHtyfQ0KI0xldHR1cmEgZGVsIGdyYWZvIGNvbXBsZXRvDQpncmFmbyA8LSByZWFkX2dyYXBoKCJtdWx0aWxheWVyLmdyYXBobWwiLCBmb3JtYXQgPSAiZ3JhcGhtbCIpDQojdmVyaWZpY2EgQXJjaGkgZSBub2RpDQpjYXQoIm51bWVybyBkaSBub2RpIG5lbCBncmFmbyBtdWx0aWxheWVyIiwgZ29yZGVyKGdyYWZvKSwgIlxuIikNCmNhdCgibnVtZXIgb2RpIGFyY2hpIG5lbCBncmFmbyBtdWx0aWxheWVyIiwgZ3NpemUoZ3JhZm8pKQ0KTm9kZXMgPC0gZ29yZGVyKGdyYWZvKQ0KYGBgDQpgYGB7cn0NCiMgRXN0cmFpIGwnZWxlbmNvIGRlaSBub21pIGRlaSBub2RpIGRhbCBncmFmbyBjb21wbGV0bywgbWFuaXBvbGFuZG8gbGEgc3RyaW5nYSBkZWxsJ0lEDQp0dXR0aV9ub2RpIDwtIHNhcHBseShWKGdyYWZvKSRpZCwgZnVuY3Rpb24oaWQpIHsNCiAgcGFydGkgPC0gc3Ryc3BsaXQoZ3N1YigiWygpJ10iLCAiIiwgaWQpLCAiLCAiKVtbMV1dDQogIG5vbWVfZ2VuZSA8LSBwYXJ0aVsxXQ0KICByZXR1cm4obm9tZV9nZW5lKQ0KfSkNCg0KIyBFbGltaW5hIGV2ZW50dWFsaSBkdXBsaWNhdGksIHNlIHByZXNlbnRpDQp0dXR0aV9ub2RpIDwtIHVuaXF1ZSh0dXR0aV9ub2RpKQ0KYGBgDQoNCmBgYHtyfQ0Kc290dG9ncmFmb19leHByZXNzaW9uX2FsbGluZWF0byA8LSBtYWtlX2VtcHR5X2dyYXBoKG49bGVuZ3RoKHR1dHRpX25vZGkpLCBkaXJlY3RlZD1GQUxTRSkgJT4lDQogIHNldF92ZXJ0ZXhfYXR0cigibmFtZSIsIHZhbHVlPXR1dHRpX25vZGkpDQoNCnNvdHRvZ3JhZm9fbWV0aHlsYXRpb25fYWxsaW5lYXRvIDwtIG1ha2VfZW1wdHlfZ3JhcGgobj1sZW5ndGgodHV0dGlfbm9kaSksIGRpcmVjdGVkPUZBTFNFKSAlPiUNCiAgc2V0X3ZlcnRleF9hdHRyKCJuYW1lIiwgdmFsdWU9dHV0dGlfbm9kaSkNCg0Kc290dG9ncmFmb19tdXRhdGlvbl9hbGxpbmVhdG8gPC0gbWFrZV9lbXB0eV9ncmFwaChuPWxlbmd0aCh0dXR0aV9ub2RpKSwgZGlyZWN0ZWQ9RkFMU0UpICU+JQ0KICBzZXRfdmVydGV4X2F0dHIoIm5hbWUiLCB2YWx1ZT10dXR0aV9ub2RpKQ0KDQphZ2dpdW5naV9hcmNoaV9jb3JyaXNwb25kZW50aSA8LSBmdW5jdGlvbihzb3R0b2dyYWZvLCBncmFmb19vcmlnaW5hbGUsIHRpcG8pIHsNCiAgYXJjaGlfZGFfYWdnaXVuZ2VyZSA8LSBFKGdyYWZvX29yaWdpbmFsZSlbRShncmFmb19vcmlnaW5hbGUpJHR5cGUgPT0gdGlwb10NCiAgaWYobGVuZ3RoKGFyY2hpX2RhX2FnZ2l1bmdlcmUpID4gMCkgew0KICAgIGluZGljaV9ub2RpIDwtIGVuZHMoZ3JhZm9fb3JpZ2luYWxlLCBlcyA9IGFyY2hpX2RhX2FnZ2l1bmdlcmUpDQogICAgDQogICAgZm9yKGkgaW4gMTpucm93KGluZGljaV9ub2RpKSkgew0KICAgICAgZnJvbV9pZCA8LSBpbmRpY2lfbm9kaVtpLCAxXQ0KICAgICAgdG9faWQgPC0gaW5kaWNpX25vZGlbaSwgMl0NCiAgICAgIA0KICAgICAgIyBPdHRpZW5lIGkgbm9taSBkZWkgbm9kaSBkYSBlIHZlcnNvIHVzYW5kbyBnbGkgaW5kaWNpDQogICAgICBmcm9tIDwtIFYoZ3JhZm9fb3JpZ2luYWxlKSRuYW1lW2Zyb21faWRdDQogICAgICB0byA8LSBWKGdyYWZvX29yaWdpbmFsZSkkbmFtZVt0b19pZF0NCiAgICAgIA0KICAgICAgIyBBc3NpY3VyYXRpIGNoZSAnZnJvbScgZSAndG8nIG5vbiBzaWFubyBOQQ0KICAgICAgaWYoIWlzLm5hKGZyb20pICYmICFpcy5uYSh0bykpIHsNCiAgICAgICAgIyBDb250cm9sbGEgc2UgZW50cmFtYmkgaSBub2RpIHNvbm8gcHJlc2VudGkgaW4gJ3R1dHRpX25vZGknIHByaW1hIGRpIGFnZ2l1bmdlcmUgbCdhcmNvDQogICAgICAgIGlmKGZyb20gJWluJSBWKHNvdHRvZ3JhZm8pJG5hbWUgJiYgdG8gJWluJSBWKHNvdHRvZ3JhZm8pJG5hbWUpIHsNCiAgICAgICAgICAjIEFnZ2l1bmdlIGwnYXJjbyB0cmEgaSBub2RpIGNvcnJpc3BvbmRlbnRpDQogICAgICAgICAgc290dG9ncmFmbyA8LSBhZGRfZWRnZXMoc290dG9ncmFmbywgYyh3aGljaChWKHNvdHRvZ3JhZm8pJG5hbWUgPT0gZnJvbSksIHdoaWNoKFYoc290dG9ncmFmbykkbmFtZSA9PSB0bykpKQ0KICAgICAgICB9DQogICAgICB9DQogICAgfQ0KICB9DQogIHJldHVybihzb3R0b2dyYWZvKQ0KfQ0KDQoNCiMgQXBwbGljYSBsYSBmdW56aW9uZSBwZXIgYWdnaXVuZ2VyZSBnbGkgYXJjaGkgYWkgc290dG9ncmFmaQ0Kc290dG9ncmFmb19leHByZXNzaW9uX2FsbGluZWF0byA8LSBhZ2dpdW5naV9hcmNoaV9jb3JyaXNwb25kZW50aShzb3R0b2dyYWZvX2V4cHJlc3Npb25fYWxsaW5lYXRvLCBncmFmbywgImV4cHJlc3Npb24iKQ0Kc290dG9ncmFmb19tZXRoeWxhdGlvbl9hbGxpbmVhdG8gPC0gYWdnaXVuZ2lfYXJjaGlfY29ycmlzcG9uZGVudGkoc290dG9ncmFmb19tZXRoeWxhdGlvbl9hbGxpbmVhdG8sIGdyYWZvLCAibWV0aHlsYXRpb24iKQ0Kc290dG9ncmFmb19tdXRhdGlvbl9hbGxpbmVhdG8gPC0gYWdnaXVuZ2lfYXJjaGlfY29ycmlzcG9uZGVudGkoc290dG9ncmFmb19tdXRhdGlvbl9hbGxpbmVhdG8sIGdyYWZvLCAibXV0YXRpb24iKQ0KYGBgDQoNCg0KYGBge3J9DQojTmV0d29yayBzZXR1cA0KTGF5ZXJzIDwtIDMNCmxheWVyQ291cGxpbmdTdHJlbmd0aCA8LSAxDQpuZXR3b3JrT2ZMYXllcnNUeXBlIDwtICJjYXRlZ29yaWNhbCINCmxheWVyLmNvbG9ycyA8LSBicmV3ZXIucGFsKDMsICJTZXQyIikNCmBgYA0KDQpgYGB7cn0NCm5vZGVUZW5zb3IgPC0gbGlzdCgpDQpmb3IobCBpbiAxOkxheWVycyl7DQogIG5vZGVUZW5zb3JbW2xdXSA8LSBpZ3JhcGg6OmdldC5hZGphY2VuY3koZy5saXN0W1tsXV0pDQp9DQpgYGANCg0KYGBge3J9DQojRGVmaW5lIHRoZSBuZXR3b3JrIG9mIGxheWVycw0KbGF5ZXJUZW5zb3IgPC0NCiAgQnVpbGRMYXllcnNUZW5zb3IoDQogICAgTGF5ZXJzID0gTGF5ZXJzLA0KICAgIE9tZWdhUGFyYW1ldGVyID0gbGF5ZXJDb3VwbGluZ1N0cmVuZ3RoLA0KICAgIE11bHRpc2xpY2VUeXBlID0gbmV0d29ya09mTGF5ZXJzVHlwZQ0KICApDQpgYGANCg0KYGBge3J9DQojIEFnZ2l1c3RhIGxlIGRpbWVuc2lvbmkgZGVsbGUgbWF0cmljaSBkaSBhZGlhY2VuemEgcGVyIGFzc2ljdXJhcmUgbGEgY29lcmVuemENCmFkanVzdF9hZGphY2VuY3lfbWF0cml4IDwtIGZ1bmN0aW9uKG1hdCwgdG90YWxfbm9kZXMpIHsNCiAgIyBDcmVhIHVuYSBtYXRyaWNlIHF1YWRyYXRhIGNvbiBkaW1lbnNpb25pIHBhcmkgYWwgbnVtZXJvIHRvdGFsZSBkaSBub2RpDQogICMgSW5pemlhbGl6emF0YSBhIDAgKG5lc3N1bmEgY29ubmVzc2lvbmUpDQogIGFkanVzdGVkX21hdCA8LSBtYXRyaXgoMCwgbnJvdyA9IHRvdGFsX25vZGVzLCBuY29sID0gdG90YWxfbm9kZXMpDQogIA0KICAjIFNvc3RpdHVpc2NpIGxhIHBvcnppb25lIGNvcnJpc3BvbmRlbnRlIGNvbiBsYSBtYXRyaWNlIGRpIGFkaWFjZW56YSBvcmlnaW5hbGUNCiAgZGltbmFtZXMoYWRqdXN0ZWRfbWF0KSA8LSBsaXN0KHJvd25hbWVzKG1hdCksIGNvbG5hbWVzKG1hdCkpDQogIGFkanVzdGVkX21hdFtyb3duYW1lcyhtYXQpLCBjb2xuYW1lcyhtYXQpXSA8LSBtYXQNCiAgDQogIHJldHVybihhZGp1c3RlZF9tYXQpDQp9DQoNCiMgTnVtZXJvIHRvdGFsZSBkaSBub2RpIG5lbCBncmFmbw0KdG90YWxfbm9kZXMgPC0gZ29yZGVyKGdyYWZvKQ0KDQojIFJlZ29sYSBsZSBkaW1lbnNpb25pIGRpIGNpYXNjdW5hIG1hdHJpY2UgZGkgYWRpYWNlbnphIGluICdub2RlVGVuc29yJw0KZm9yKGwgaW4gMTpMYXllcnMpew0KICBub2RlVGVuc29yW1tsXV0gPC0gYWRqdXN0X2FkamFjZW5jeV9tYXRyaXgobm9kZVRlbnNvcltbbF1dLCB0b3RhbF9ub2RlcykNCn0NCmBgYA==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIk11bHRpIExheWVyIEdyYXBoIEFuYWx5c2lzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KYGBge3J9DQpsaWJyYXJ5KGdncGxvdDIpDQpsaWJyYXJ5KGdncmFwaCkNCmxpYnJhcnkoZ3JpZCkNCmxpYnJhcnkoaWdyYXBoKQ0KbGlicmFyeShtdXhWaXopDQpsaWJyYXJ5KFJDb2xvckJyZXdlcikNCmxpYnJhcnkocHJvZ3Jlc3MpDQpgYGANCg0KYGBge3J9DQpybShsaXN0ID0gbHMoKSkNCiNMZXR0dXJhIGRlbCBncmFmbyBjb21wbGV0bw0KZ3JhZm8gPC0gcmVhZF9ncmFwaCgibXVsdGlsYXllci5ncmFwaG1sIiwgZm9ybWF0ID0gImdyYXBobWwiKQ0KYGBgDQoNCmBgYHtyfQ0KIyBFc3RyYWkgaSB0aXBpIGRpIGxheWVyIGUgaSBub21pIGRlaSBub2RpIHV0aWxpenphbmRvIGwnSUQgZGVsIG5vZG8sIHB1bGVuZG8gaSBkYXRpIGluIHVuIHVuaWNvIHBhc3NhZ2dpbw0Kbm9kaV9lX2xheWVyIDwtIHN0cnNwbGl0KFYoZ3JhZm8pJGlkLCBzcGxpdCA9ICInLCAnIiwgZml4ZWQgPSBUUlVFKQ0Kbm9taV9ub2RpIDwtIHVuaXF1ZShzYXBwbHkobm9kaV9lX2xheWVyLCBmdW5jdGlvbih4KSBnc3ViKCJbKCknXSIsICIiLCB4WzFdKSkpDQp0aXBpX2xheWVyIDwtIHVuaXF1ZShzYXBwbHkobm9kaV9lX2xheWVyLCBmdW5jdGlvbih4KSBnc3ViKCJbJyldIiwgIiIsIHhbMl0pKSkNCg0KIyBTdGFtcGEgcGVyIHZlcmlmaWNhDQpwcmludChoZWFkKG5vbWlfbm9kaSkpDQpwcmludCh0aXBpX2xheWVyKQ0KYGBgDQpgYGB7cn0NCiMgQWdnaXVuZ2kgdW4gYXR0cmlidXRvICduYW1lJyBhIGNpYXNjdW4gbm9kbyBuZWwgZ3JhZm8gb3JpZ2luYWxlIGNvbnRlbmVudGUgc29sbyBpbCBub21lIGRlbCBnZW5lDQpWKGdyYWZvKSRuYW1lIDwtIHNhcHBseShWKGdyYWZvKSRpZCwgZnVuY3Rpb24oaWQpIHsNCiAgIyBFc3RyYWkgc29sbyBpbCBub21lIGRlbCBnZW5lIGRhbGwnSUQgZGVsIG5vZG8NCiAgbm9tZV9nZW5lIDwtIGdzdWIoIlsoKSddIiwgIiIsIHN0cnNwbGl0KGlkLCAiLCAiKVtbMV1dWzFdKQ0KICBub21lX2dlbmUNCn0pDQoNCiMgVmVyaWZpY2EgY2hlIGwnYXR0cmlidXRvICduYW1lJyBzaWEgc3RhdG8gYWdnaXVudG8gY29ycmV0dGFtZW50ZQ0KaGVhZChWKGdyYWZvKSRuYW1lKQ0KYGBgDQoNCmBgYHtyfQ0KIyBQcmVwYXJhIHVuIHNldCBjb21wbGV0byBkaSBub2RpIHBlciBvZ25pIHRpcG8gZGkgbGF5ZXINCm5vZGlfY29tcGxldGlfcGVyX2xheWVyIDwtIGV4cGFuZC5ncmlkKG5vbWlfbm9kaSwgdGlwaV9sYXllcikNCmNvbG5hbWVzKG5vZGlfY29tcGxldGlfcGVyX2xheWVyKSA8LSBjKCJub21lIiwgImxheWVyIikNCmBgYA0KDQpgYGB7cn0NCnNvdHRvZ3JhZmkgPC0gbGlzdCgpDQpmb3IgKGxheWVyIGluIHRpcGlfbGF5ZXIpIHsNCiAgIyBDcmVhIHVuIHNvdHRvZ3JhZm8gdnVvdG8NCiAgc290dG9ncmFmbyA8LSBtYWtlX2VtcHR5X2dyYXBoKG4gPSBsZW5ndGgobm9taV9ub2RpKSkNCiAgIyBBc3NlZ25hIGkgbm9taSBkZWkgbm9kaQ0KICBWKHNvdHRvZ3JhZm8pJG5hbWUgPC0gbm9taV9ub2RpDQogICMgU2FsdmEgaWwgc290dG9ncmFmbyBpbml6aWFsaXp6YXRvDQogIHNvdHRvZ3JhZmlbW2xheWVyXV0gPC0gc290dG9ncmFmbw0KfQ0KYGBgDQoNCmBgYHtyfQ0KIyBwcmVjYWxjb2xvIGRlZ2xpIGluZGljaQ0KaW5kaWNlX25vZGkgPC0gbGlzdCgpDQpmb3IobGF5ZXIgaW4gdGlwaV9sYXllcikgew0KICBub21pX25vZGlfbGF5ZXJfc3BlY2lmaWNpIDwtIFYoc290dG9ncmFmaVtbbGF5ZXJdXSkkbmFtZQ0KICBpbmRpY2Vfbm9kaVtbbGF5ZXJdXSA8LSBzZXROYW1lcyhzZXFfYWxvbmcobm9taV9ub2RpX2xheWVyX3NwZWNpZmljaSksIG5vbWlfbm9kaV9sYXllcl9zcGVjaWZpY2kpDQp9DQpgYGANCg0KYGBge3J9DQojIE9wZXJhemlvbmUgcGnDuSBvbmVyb3NhIGluIGFzc29sdXRvLCBxdWluZGkgbm9uIGVzZWd1aXJlLCBpIGdyYWZpIHJpc3VsdGF0aSBkYSBxdWVzdGEgb3BlcmF6aW9uZSBzb25vIHNhbHZhdGkgbmVsbGEgZGlyZWN0b3J5DQpmb3IoZSBpbiBFKGdyYWZvKSkgew0KICBpZihlICUlIDEwMCA9PSAwKSB7DQogICAgY2F0KCJhcmNvOiAiLCBlLCAiLzE0NDQzMSBcbiIpDQogIH0NCiAgbm9kaV9lbmRzIDwtIGVuZHMoZ3JhZm8sIGUpDQogIHNvcmdlbnRlIDwtIFYoZ3JhZm8pW25vZGlfZW5kc1sxXV0kbmFtZQ0KICBkZXN0aW5hemlvbmUgPC0gVihncmFmbylbbm9kaV9lbmRzWzJdXSRuYW1lDQogIHRpcG9fbGF5ZXIgPC0gRShncmFmbylbZV0kdHlwZQ0KICBpZih0aXBvX2xheWVyICE9ICJpbnRlcmxheWVyIikgew0KICAgIGluZGljZV9zb3JnZW50ZSA8LSBpbmRpY2Vfbm9kaVtbdGlwb19sYXllcl1dW3NvcmdlbnRlXQ0KICAgIGluZGljZV9kZXN0aW5hemlvbmUgPC0gaW5kaWNlX25vZGlbW3RpcG9fbGF5ZXJdXVtkZXN0aW5hemlvbmVdDQogICAgc290dG9ncmFmaVtbdGlwb19sYXllcl1dIDwtIGFkZF9lZGdlcyhzb3R0b2dyYWZpW1t0aXBvX2xheWVyXV0sIGMoaW5kaWNlX3NvcmdlbnRlLCBpbmRpY2VfZGVzdGluYXppb25lKSkNCiAgfQ0KfQ0KYGBgDQoNCg0KYGBge3J9DQojIHZlcmlmaWNoZQ0KIyBTdGFtcGEgaWwgbnVtZXJvIGRpIG5vZGkgZSBhcmNoaSBwZXIgY2lhc2N1biBzb3R0b2dyYWZvDQpsYXBwbHkoc290dG9ncmFmaSwgZnVuY3Rpb24oZykgew0KICBsaXN0KG51bWVyb19ub2RpID0gZ29yZGVyKGcpLCBudW1lcm9fYXJjaGkgPSBnc2l6ZShnKSkNCn0pDQoNCiMgVmVyaWZpY2EgbGEgcHJlc2VuemEgZGkgdW4gbm9kbyBzcGVjaWZpY28gaW4gdW4gc290dG9ncmFmbw0Kbm9tZV9ub2RvX3NwZWNpZmljbyA8LSAiKCdub21lX2dlbmUnLCAnZXhwcmVzc2lvbicpIg0KbGF5ZXIgPSAiZXhwcmVzc2lvbiIgIyBBc3NpY3VyYXRpIGRpIHNvc3RpdHVpcmUgJ25vbWVfZ2VuZScgY29uIHVuIG5vbWUgZGkgZ2VuZSB2YWxpZG8gZSAnZXhwcmVzc2lvbicgY29uIGlsIGxheWVyIGNvcnJldHRvDQppZihub21lX25vZG9fc3BlY2lmaWNvICVpbiUgVihzb3R0b2dyYWZpW1tsYXllcl1dKSRpZCkgew0KICBwcmludChwYXN0ZSgiSWwgbm9kbyIsIG5vbWVfbm9kb19zcGVjaWZpY28sICLDqCBwcmVzZW50ZSBuZWwgc290dG9ncmFmbyIsIGxheWVyKSkNCn0gZWxzZSB7DQogIHByaW50KHBhc3RlKCJJbCBub2RvIiwgbm9tZV9ub2RvX3NwZWNpZmljbywgIk5PTiDDqCBwcmVzZW50ZSBuZWwgc290dG9ncmFmbyIsIGxheWVyKSkNCn0NCg0KIyBDb250cm9sbGEgYWxjdW5pIGFyY2hpIHBlciB1biBzb3R0b2dyYWZvIHNwZWNpZmljbw0KaGVhZChFKHNvdHRvZ3JhZmlbW2xheWVyXV0pKQ0KYGBgDQoNCmBgYHtyfQ0KIyBFc3RyYWkgbCdlbGVuY28gZGVpIG5vbWkgZGVpIG5vZGkgZGFsIGdyYWZvIGNvbXBsZXRvLCBtYW5pcG9sYW5kbyBsYSBzdHJpbmdhIGRlbGwnSUQNCnR1dHRpX25vZGkgPC0gc2FwcGx5KFYoZ3JhZm8pJGlkLCBmdW5jdGlvbihpZCkgew0KICBwYXJ0aSA8LSBzdHJzcGxpdChnc3ViKCJbKCknXSIsICIiLCBpZCksICIsICIpW1sxXV0NCiAgbm9tZV9nZW5lIDwtIHBhcnRpWzFdDQogIHJldHVybihub21lX2dlbmUpDQp9KQ0KDQojIEVsaW1pbmEgZXZlbnR1YWxpIGR1cGxpY2F0aSwgc2UgcHJlc2VudGkNCnR1dHRpX25vZGkgPC0gdW5pcXVlKHR1dHRpX25vZGkpDQpgYGANCg0KYGBge3J9DQphZ2dpdW5naV9ub2RpX21hbmNhbnRpIDwtIGZ1bmN0aW9uKHNvdHRvZ3JhZm8sIG5vZGlfY29tcGxldGkpIHsNCiAgbm9kaV9hdHR1YWxpIDwtIFYoc290dG9ncmFmbykkbmFtZQ0KICBub2RpX2RhX2FnZ2l1bmdlcmUgPC0gc2V0ZGlmZihub2RpX2NvbXBsZXRpLCBub2RpX2F0dHVhbGkpDQogIA0KICBmb3IgKG5vZG8gaW4gbm9kaV9kYV9hZ2dpdW5nZXJlKSB7DQogICAgc290dG9ncmFmbyA8LSBhZGRfdmVydGljZXMoc290dG9ncmFmbywgMSwgbmFtZSA9IG5vZG8pDQogIH0NCiAgDQogIHJldHVybihzb3R0b2dyYWZvKQ0KfQ0KYGBgDQoNCg0KYGBge3J9DQojTmV0d29yayBzZXR1cA0KTGF5ZXJzIDwtIDMNCmxheWVyQ291cGxpbmdTdHJlbmd0aCA8LSAxDQpuZXR3b3JrT2ZMYXllcnNUeXBlIDwtICJjYXRlZ29yaWNhbCINCmxheWVyLmNvbG9ycyA8LSBicmV3ZXIucGFsKDMsICJTZXQyIikNCmBgYA0KDQpgYGB7cn0NCm5vZGVUZW5zb3IgPC0gbGlzdCgpDQpmb3IobCBpbiAxOkxheWVycyl7DQogIG5vZGVUZW5zb3JbW2xdXSA8LSBpZ3JhcGg6OmdldC5hZGphY2VuY3koZy5saXN0W1tsXV0pDQp9DQpgYGANCg0KYGBge3J9DQojRGVmaW5lIHRoZSBuZXR3b3JrIG9mIGxheWVycw0KbGF5ZXJUZW5zb3IgPC0NCiAgQnVpbGRMYXllcnNUZW5zb3IoDQogICAgTGF5ZXJzID0gTGF5ZXJzLA0KICAgIE9tZWdhUGFyYW1ldGVyID0gbGF5ZXJDb3VwbGluZ1N0cmVuZ3RoLA0KICAgIE11bHRpc2xpY2VUeXBlID0gbmV0d29ya09mTGF5ZXJzVHlwZQ0KICApDQpgYGANCg0KYGBge3J9DQojIEFnZ2l1c3RhIGxlIGRpbWVuc2lvbmkgZGVsbGUgbWF0cmljaSBkaSBhZGlhY2VuemEgcGVyIGFzc2ljdXJhcmUgbGEgY29lcmVuemENCmFkanVzdF9hZGphY2VuY3lfbWF0cml4IDwtIGZ1bmN0aW9uKG1hdCwgdG90YWxfbm9kZXMpIHsNCiAgIyBDcmVhIHVuYSBtYXRyaWNlIHF1YWRyYXRhIGNvbiBkaW1lbnNpb25pIHBhcmkgYWwgbnVtZXJvIHRvdGFsZSBkaSBub2RpDQogICMgSW5pemlhbGl6emF0YSBhIDAgKG5lc3N1bmEgY29ubmVzc2lvbmUpDQogIGFkanVzdGVkX21hdCA8LSBtYXRyaXgoMCwgbnJvdyA9IHRvdGFsX25vZGVzLCBuY29sID0gdG90YWxfbm9kZXMpDQogIA0KICAjIFNvc3RpdHVpc2NpIGxhIHBvcnppb25lIGNvcnJpc3BvbmRlbnRlIGNvbiBsYSBtYXRyaWNlIGRpIGFkaWFjZW56YSBvcmlnaW5hbGUNCiAgZGltbmFtZXMoYWRqdXN0ZWRfbWF0KSA8LSBsaXN0KHJvd25hbWVzKG1hdCksIGNvbG5hbWVzKG1hdCkpDQogIGFkanVzdGVkX21hdFtyb3duYW1lcyhtYXQpLCBjb2xuYW1lcyhtYXQpXSA8LSBtYXQNCiAgDQogIHJldHVybihhZGp1c3RlZF9tYXQpDQp9DQoNCiMgTnVtZXJvIHRvdGFsZSBkaSBub2RpIG5lbCBncmFmbw0KdG90YWxfbm9kZXMgPC0gZ29yZGVyKGdyYWZvKQ0KDQojIFJlZ29sYSBsZSBkaW1lbnNpb25pIGRpIGNpYXNjdW5hIG1hdHJpY2UgZGkgYWRpYWNlbnphIGluICdub2RlVGVuc29yJw0KZm9yKGwgaW4gMTpMYXllcnMpew0KICBub2RlVGVuc29yW1tsXV0gPC0gYWRqdXN0X2FkamFjZW5jeV9tYXRyaXgobm9kZVRlbnNvcltbbF1dLCB0b3RhbF9ub2RlcykNCn0NCmBgYA==</div>
 
 
 

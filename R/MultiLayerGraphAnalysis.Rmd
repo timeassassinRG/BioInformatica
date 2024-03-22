@@ -10,17 +10,103 @@ library(grid)
 library(igraph)
 library(muxViz)
 library(RColorBrewer)
+library(progress)
 ```
 
-rm(list = ls())
 ```{r}
+rm(list = ls())
 #Lettura del grafo completo
 grafo <- read_graph("multilayer.graphml", format = "graphml")
-#verifica Archi e nodi
-cat("numero di nodi nel grafo multilayer", gorder(grafo), "\n")
-cat("numer odi archi nel grafo multilayer", gsize(grafo))
-Nodes <- gorder(grafo)
 ```
+
+```{r}
+# Estrai i tipi di layer e i nomi dei nodi utilizzando l'ID del nodo, pulendo i dati in un unico passaggio
+nodi_e_layer <- strsplit(V(grafo)$id, split = "', '", fixed = TRUE)
+nomi_nodi <- unique(sapply(nodi_e_layer, function(x) gsub("[()']", "", x[1])))
+tipi_layer <- unique(sapply(nodi_e_layer, function(x) gsub("[')]", "", x[2])))
+
+# Stampa per verifica
+print(head(nomi_nodi))
+print(tipi_layer)
+```
+```{r}
+# Aggiungi un attributo 'name' a ciascun nodo nel grafo originale contenente solo il nome del gene
+V(grafo)$name <- sapply(V(grafo)$id, function(id) {
+  # Estrai solo il nome del gene dall'ID del nodo
+  nome_gene <- gsub("[()']", "", strsplit(id, ", ")[[1]][1])
+  nome_gene
+})
+
+# Verifica che l'attributo 'name' sia stato aggiunto correttamente
+head(V(grafo)$name)
+```
+
+```{r}
+# Prepara un set completo di nodi per ogni tipo di layer
+nodi_completi_per_layer <- expand.grid(nomi_nodi, tipi_layer)
+colnames(nodi_completi_per_layer) <- c("nome", "layer")
+```
+
+```{r}
+sottografi <- list()
+for (layer in tipi_layer) {
+  # Crea un sottografo vuoto
+  sottografo <- make_empty_graph(n = length(nomi_nodi))
+  # Assegna i nomi dei nodi
+  V(sottografo)$name <- nomi_nodi
+  # Salva il sottografo inizializzato
+  sottografi[[layer]] <- sottografo
+}
+```
+
+```{r}
+# precalcolo degli indici
+indice_nodi <- list()
+for(layer in tipi_layer) {
+  nomi_nodi_layer_specifici <- V(sottografi[[layer]])$name
+  indice_nodi[[layer]] <- setNames(seq_along(nomi_nodi_layer_specifici), nomi_nodi_layer_specifici)
+}
+```
+
+```{r}
+# Operazione più onerosa in assoluto, quindi non eseguire, i grafi risultati da questa operazione sono salvati nella directory
+for(e in E(grafo)) {
+  if(e %% 100 == 0) {
+    cat("arco: ", e, "/144431 \n")
+  }
+  nodi_ends <- ends(grafo, e)
+  sorgente <- V(grafo)[nodi_ends[1]]$name
+  destinazione <- V(grafo)[nodi_ends[2]]$name
+  tipo_layer <- E(grafo)[e]$type
+  if(tipo_layer != "interlayer") {
+    indice_sorgente <- indice_nodi[[tipo_layer]][sorgente]
+    indice_destinazione <- indice_nodi[[tipo_layer]][destinazione]
+    sottografi[[tipo_layer]] <- add_edges(sottografi[[tipo_layer]], c(indice_sorgente, indice_destinazione))
+  }
+}
+```
+
+
+```{r}
+# verifiche
+# Stampa il numero di nodi e archi per ciascun sottografo
+lapply(sottografi, function(g) {
+  list(numero_nodi = gorder(g), numero_archi = gsize(g))
+})
+
+# Verifica la presenza di un nodo specifico in un sottografo
+nome_nodo_specifico <- "('nome_gene', 'expression')"
+layer = "expression" # Assicurati di sostituire 'nome_gene' con un nome di gene valido e 'expression' con il layer corretto
+if(nome_nodo_specifico %in% V(sottografi[[layer]])$id) {
+  print(paste("Il nodo", nome_nodo_specifico, "è presente nel sottografo", layer))
+} else {
+  print(paste("Il nodo", nome_nodo_specifico, "NON è presente nel sottografo", layer))
+}
+
+# Controlla alcuni archi per un sottografo specifico
+head(E(sottografi[[layer]]))
+```
+
 ```{r}
 # Estrai l'elenco dei nomi dei nodi dal grafo completo, manipolando la stringa dell'ID
 tutti_nodi <- sapply(V(grafo)$id, function(id) {
@@ -34,46 +120,16 @@ tutti_nodi <- unique(tutti_nodi)
 ```
 
 ```{r}
-sottografo_expression_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
-  set_vertex_attr("name", value=tutti_nodi)
-
-sottografo_methylation_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
-  set_vertex_attr("name", value=tutti_nodi)
-
-sottografo_mutation_allineato <- make_empty_graph(n=length(tutti_nodi), directed=FALSE) %>%
-  set_vertex_attr("name", value=tutti_nodi)
-
-aggiungi_archi_corrispondenti <- function(sottografo, grafo_originale, tipo) {
-  archi_da_aggiungere <- E(grafo_originale)[E(grafo_originale)$type == tipo]
-  if(length(archi_da_aggiungere) > 0) {
-    indici_nodi <- ends(grafo_originale, es = archi_da_aggiungere)
-    
-    for(i in 1:nrow(indici_nodi)) {
-      from_id <- indici_nodi[i, 1]
-      to_id <- indici_nodi[i, 2]
-      
-      # Ottiene i nomi dei nodi da e verso usando gli indici
-      from <- V(grafo_originale)$name[from_id]
-      to <- V(grafo_originale)$name[to_id]
-      
-      # Assicurati che 'from' e 'to' non siano NA
-      if(!is.na(from) && !is.na(to)) {
-        # Controlla se entrambi i nodi sono presenti in 'tutti_nodi' prima di aggiungere l'arco
-        if(from %in% V(sottografo)$name && to %in% V(sottografo)$name) {
-          # Aggiunge l'arco tra i nodi corrispondenti
-          sottografo <- add_edges(sottografo, c(which(V(sottografo)$name == from), which(V(sottografo)$name == to)))
-        }
-      }
-    }
+aggiungi_nodi_mancanti <- function(sottografo, nodi_completi) {
+  nodi_attuali <- V(sottografo)$name
+  nodi_da_aggiungere <- setdiff(nodi_completi, nodi_attuali)
+  
+  for (nodo in nodi_da_aggiungere) {
+    sottografo <- add_vertices(sottografo, 1, name = nodo)
   }
+  
   return(sottografo)
 }
-
-
-# Applica la funzione per aggiungere gli archi ai sottografi
-sottografo_expression_allineato <- aggiungi_archi_corrispondenti(sottografo_expression_allineato, grafo, "expression")
-sottografo_methylation_allineato <- aggiungi_archi_corrispondenti(sottografo_methylation_allineato, grafo, "methylation")
-sottografo_mutation_allineato <- aggiungi_archi_corrispondenti(sottografo_mutation_allineato, grafo, "mutation")
 ```
 
 
