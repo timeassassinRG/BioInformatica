@@ -128,6 +128,7 @@ if(!caricati_con_successo) {
   cat("Tutti i sottografi sono stati caricati con successo.\n")
 }
 ```
+
 ```{r}
 # verifiche
 # Stampa il numero di nodi e archi per ciascun sottografo
@@ -158,7 +159,6 @@ for(layer in names(sottografi)) {
 }
 ```
 
-
 ```{r}
 #Inizio analisi con MuxVizR
 #Network setup
@@ -175,6 +175,7 @@ for(l in 1:Layers){
   nodeTensor[[l]] <- igraph::get.adjacency(g.list[[l]])
 }
 ```
+
 ```{r}
 #Define the network of layers
 layerTensor <-
@@ -203,7 +204,6 @@ lcc <- GetGiantConnectedComponent(M, Layers, Nodes)
 
 ```
 
-
 ```{r}
 NodesTensor <- nodeTensor
 
@@ -230,7 +230,6 @@ AggregateNetworkFromSupraAdjacencyMatrix <- GetAggregateNetworkFromSupraAdjacenc
 
 ```
 
-
 ```{r}
 #Centralities
 
@@ -239,7 +238,6 @@ AggregateNetworkFromSupraAdjacencyMatrix <- GetAggregateNetworkFromSupraAdjacenc
 
 
 ```
-
 
 ```{r}
 #Mesoscale structures
@@ -261,14 +259,6 @@ plot_multiplex(g.list, layer.colors, edge.colors = "black", node.colors = "auto"
 ```
 
 ```{r}
-#alcuni esempi di utilizzo di libreria MuxVizR per analisi del grafo multilayer
-```
-
-```{r}
 #Calculate Global Clustering Coefficient
 GloblalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
-```
-
-```{r}
-
 ```
