@@ -29,6 +29,7 @@ tipi_layer <- unique(sapply(nodi_e_layer, function(x) gsub("[')]", "", x[2])))
 print(head(nomi_nodi))
 print(tipi_layer)
 ```
+
 ```{r}
 # Aggiungi un attributo 'name' a ciascun nodo nel grafo originale contenente solo il nome del gene
 V(grafo)$name <- sapply(V(grafo)$id, function(id) {
@@ -69,9 +70,42 @@ for(layer in tipi_layer) {
 ```
 
 ```{r}
-# Operazione più onerosa in assoluto, quindi non eseguire, i grafi risultati da questa operazione sono salvati nella directory
-for(e in E(grafo)) {
-  if(e %% 100 == 0) {
+# Imposta la directory in cui cercare/salvare i sottografi
+directory_salvataggio <- "./"
+
+# Inizializza la lista dei sottografi
+sottografi <- list()
+
+# Prova a caricare i sottografi esistenti per ogni layer
+caricati_con_successo <- TRUE
+for(layer in tipi_layer) {
+  percorso_file <- paste0(directory_salvataggio, "sottografo_", layer, ".graphml")
+  
+  if(file.exists(percorso_file)) {
+    sottografi[[layer]] <- read_graph(percorso_file, format = "graphml")
+  } else {
+    caricati_con_successo <- FALSE
+    break
+  }
+}
+
+# Se non tutti i sottografi sono stati caricati, esegui il ciclo for per generarli
+if(!caricati_con_successo) {
+  cat("Non tutti i sottografi esistono. Generazione dei sottografi in corso...\n")
+  
+  # (Re)inizializza i sottografi se necessario
+  # Questo passaggio dipende da come vuoi gestire la situazione in cui alcuni sottografi esistono e altri no
+  # Qui li reinizializziamo tutti per semplicità
+  sottografi <- list()
+  for(layer in tipi_layer) {
+    sottografo <- make_empty_graph(n = length(nomi_nodi))
+    V(sottografo)$name <- nomi_nodi
+    sottografi[[layer]] <- sottografo
+  }
+  
+  # Inserisci qui il codice per popolare i sottografi, come il ciclo for sopra
+  for(e in E(grafo)) {
+    if(e %% 100 == 0) {
     cat("arco: ", e, "/144431 \n")
   }
   nodi_ends <- ends(grafo, e)
@@ -83,10 +117,17 @@ for(e in E(grafo)) {
     indice_destinazione <- indice_nodi[[tipo_layer]][destinazione]
     sottografi[[tipo_layer]] <- add_edges(sottografi[[tipo_layer]], c(indice_sorgente, indice_destinazione))
   }
+  }
+  
+  # Dopo la generazione, salva i nuovi sottografi per un uso futuro
+  for(layer in tipi_layer) {
+    percorso_file <- paste0(directory_salvataggio, "sottografo_", layer, ".graphml")
+    write_graph(sottografi[[layer]], percorso_file, format = "graphml")
+  }
+} else {
+  cat("Tutti i sottografi sono stati caricati con successo.\n")
 }
 ```
-
-
 ```{r}
 # verifiche
 # Stampa il numero di nodi e archi per ciascun sottografo
@@ -108,32 +149,18 @@ head(E(sottografi[[layer]]))
 ```
 
 ```{r}
-# Estrai l'elenco dei nomi dei nodi dal grafo completo, manipolando la stringa dell'ID
-tutti_nodi <- sapply(V(grafo)$id, function(id) {
-  parti <- strsplit(gsub("[()']", "", id), ", ")[[1]]
-  nome_gene <- parti[1]
-  return(nome_gene)
-})
-
-# Elimina eventuali duplicati, se presenti
-tutti_nodi <- unique(tutti_nodi)
-```
-
-```{r}
-aggiungi_nodi_mancanti <- function(sottografo, nodi_completi) {
-  nodi_attuali <- V(sottografo)$name
-  nodi_da_aggiungere <- setdiff(nodi_completi, nodi_attuali)
-  
-  for (nodo in nodi_da_aggiungere) {
-    sottografo <- add_vertices(sottografo, 1, name = nodo)
-  }
-  
-  return(sottografo)
+#Salvataggio sottografi
+directory_salvataggio <- "./"
+# Cicla attraverso i sottografi e salvali come file GraphML
+for(layer in names(sottografi)) {
+  percorso_file <- paste0(directory_salvataggio, "sottografo_", layer, ".graphml")
+  write_graph(sottografi[[layer]], percorso_file, format = "graphml")
 }
 ```
 
 
 ```{r}
+#Inizio analisi con MuxVizR
 #Network setup
 Layers <- 3
 layerCouplingStrength <- 1
@@ -143,11 +170,11 @@ layer.colors <- brewer.pal(3, "Set2")
 
 ```{r}
 nodeTensor <- list()
+g.list <- sottografi
 for(l in 1:Layers){
   nodeTensor[[l]] <- igraph::get.adjacency(g.list[[l]])
 }
 ```
-
 ```{r}
 #Define the network of layers
 layerTensor <-
@@ -156,27 +183,92 @@ layerTensor <-
     OmegaParameter = layerCouplingStrength,
     MultisliceType = networkOfLayersType
   )
+layerLabels <- 1:Layers
 ```
 
 ```{r}
-# Aggiusta le dimensioni delle matrici di adiacenza per assicurare la coerenza
-adjust_adjacency_matrix <- function(mat, total_nodes) {
-  # Crea una matrice quadrata con dimensioni pari al numero totale di nodi
-  # Inizializzata a 0 (nessuna connessione)
-  adjusted_mat <- matrix(0, nrow = total_nodes, ncol = total_nodes)
-  
-  # Sostituisci la porzione corrispondente con la matrice di adiacenza originale
-  dimnames(adjusted_mat) <- list(rownames(mat), colnames(mat))
-  adjusted_mat[rownames(mat), colnames(mat)] <- mat
-  
-  return(adjusted_mat)
-}
+#Build the multilayer adjacency tensor
+Nodes <- vcount(sottografi[[1]])  # Utilizza il primo sottografo come riferimento
+M <- BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(nodeTensor, layerTensor, Layers, Nodes)
+SupraAdjacencyMatrix <- M
+#Una matrice di adiacenza supra o "supra-adjacency matrix" è un modo per rappresentare un grafo multistrato in una singola matrice quadrata. In pratica, è una matrice di adiacenza che combina le informazioni di tutti gli strati in un'unica struttura. Questa matrice è divisa in blocchi in modo tale che ogni blocco rappresenti le connessioni intra-layer o inter-layer. Le connessioni intra-layer sono rappresentate da blocchi sulla diagonale principale della matrice, mentre le connessioni inter-layer possono essere rappresentate da blocchi fuori dalla diagonale.
+```
 
-# Numero totale di nodi nel grafo
-total_nodes <- gorder(grafo)
+```{r}
+#Get the nodes in the largest connected component
+lcc <- GetGiantConnectedComponent(M, Layers, Nodes)
 
-# Regola le dimensioni di ciascuna matrice di adiacenza in 'nodeTensor'
-for(l in 1:Layers){
-  nodeTensor[[l]] <- adjust_adjacency_matrix(nodeTensor[[l]], total_nodes)
-}
+#GetGiantConnectedComponent
+#In teoria delle reti, la componente connessa gigante (GCC, Giant Connected Component) è la componente connessa più grande in un grafo, ovvero il sottoinsieme più grande di nodi tutti raggiungibili tra loro attraverso i percorsi nel grafo. In un contesto multistrato, questa funzione probabilmente cerca la GCC considerando la connettività complessiva attraverso tutti gli strati. Ciò significa identificare il gruppo più grande di nodi che rimane connesso quando si considerano le connessioni in tutti gli strati del grafo.
+
+```
+
+
+```{r}
+NodesTensor <- nodeTensor
+
+
+#Aggregation functions
+#Obtaining aggregated networks from multilayes.
+
+
+AggregateMatrix <- GetAggregateMatrix(NodesTensor, Layers, Nodes) #Get aggregate matrix from nodes tensor
+
+AggregateMatrixFromNetworkList <- GetAggregateMatrixFromNetworkList(g.list) #Get aggregate Matrix from network List
+
+#AggregateMatrixFromSupraAdjacencyMatrix <- GetAggregateMatrixFromSupraAdjacencyMatrix(SupraAdjacencyMatrix, Layers, Nodes) # QUESTA FUNZIONE NON ESISTE
+
+AggregateNetworkFromNetworkList <- GetAggregateNetworkFromNetworkList(g.list) #Get aggregate Network from network List
+
+
+AggregateNetworkFromSupraAdjacencyMatrix <- GetAggregateNetworkFromSupraAdjacencyMatrix(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes
+) #Get aggregate network from supra-adjacency matrix
+
+
+```
+
+
+```{r}
+#Centralities
+
+#Multi-Authority-Centrality <- GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes) #Calculates Multi-Authority-Centrality Avvertimento: sparse->dense coercion: allocating vector of size 7.7 GiBErrore: non è possibile allocare un vettore di dimensione 3.8 Gb
+
+
+
+```
+
+
+```{r}
+#Mesoscale structures
+SupraAdjacencyMatrix <- M
+# Describing and anlysis the mescoscale structure of multilayer networks.
+connectedComponents = GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes) #Return the component assignment for each node
+GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component
+
+GiantIntersectionComponent <- GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component obtained by intersecting LCC of each layer. Assumption: the network is an edge-colored multigraph
+
+
+
+```
+
+```{r}
+#layoutMultiplex(g.list, layout = "fr", ggplot.format = F, box = T)
+plot_multiplex(g.list, layer.colors, edge.colors = "black", node.colors = "auto",
+   node.size.values = 0.1, node.alpha = 0.1, edge.alpha = 1, layout = "fr", show.legend = T)
+```
+
+```{r}
+#alcuni esempi di utilizzo di libreria MuxVizR per analisi del grafo multilayer
+```
+
+```{r}
+#Calculate Global Clustering Coefficient
+GloblalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
+```
+
+```{r}
+
 ```
