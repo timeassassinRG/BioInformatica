@@ -106,7 +106,7 @@ if(!caricati_con_successo) {
   # Inserisci qui il codice per popolare i sottografi, come il ciclo for sopra
   for(e in E(grafo)) {
     if(e %% 100 == 0) {
-    cat("arco: ", e, "/144431 \n")
+    cat("arco: ", e)
   }
   nodi_ends <- ends(grafo, e)
   sorgente <- V(grafo)[nodi_ends[1]]$name
@@ -233,10 +233,7 @@ AggregateNetworkFromSupraAdjacencyMatrix <- GetAggregateNetworkFromSupraAdjacenc
 ```{r}
 #Centralities
 
-#Multi-Authority-Centrality <- GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes) #Calculates Multi-Authority-Centrality Avvertimento: sparse->dense coercion: allocating vector of size 7.7 GiBErrore: non è possibile allocare un vettore di dimensione 3.8 Gb
-
-
-
+Multi-Authority-Centrality <- GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes) #Calculates Multi-Authority-Centrality Avvertimento: sparse->dense coercion: allocating vector of size 7.7 GiBErrore: non è possibile allocare un vettore di dimensione 3.8 Gb
 ```
 
 ```{r}
@@ -247,9 +244,6 @@ connectedComponents = GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes
 GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component
 
 GiantIntersectionComponent <- GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component obtained by intersecting LCC of each layer. Assumption: the network is an edge-colored multigraph
-
-
-
 ```
 
 ```{r}
@@ -261,4 +255,18 @@ plot_multiplex(g.list, layer.colors, edge.colors = "black", node.colors = "auto"
 ```{r}
 #Calculate Global Clustering Coefficient
 GloblalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
+cat(GloblalClustering)
+```
+```{r}
+GlobalNumberTriangles <- GetGlobalNumberTriangles(SupraAdjacencyMatrix, Layers, Nodes)
+cat(GlobalNumberTriangles)
+```
+```{r}
+AverageGlobalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
+cat(AverageGlobalClustering)
+```
+
+```{r}
+AverageGlobalNodeOverlappingMatrix <- GetAverageGlobalNodeOverlappingMatrix(SupraAdjacencyMatrix, Layers, Nodes)
+cat(AverageGlobalNodeOverlappingMatrix)
 ```
