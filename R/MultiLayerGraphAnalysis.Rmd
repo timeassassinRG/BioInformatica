@@ -1,6 +1,8 @@
 ---
 title: "Multi Layer Graph Analysis"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r}
@@ -192,9 +194,333 @@ layerLabels <- 1:Layers
 Nodes <- vcount(sottografi[[1]])  # Utilizza il primo sottografo come riferimento
 M <- BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(nodeTensor, layerTensor, Layers, Nodes)
 SupraAdjacencyMatrix <- M
+isDirected = F
 #Una matrice di adiacenza supra o "supra-adjacency matrix" è un modo per rappresentare un grafo multistrato in una singola matrice quadrata. In pratica, è una matrice di adiacenza che combina le informazioni di tutti gli strati in un'unica struttura. Questa matrice è divisa in blocchi in modo tale che ogni blocco rappresenti le connessioni intra-layer o inter-layer. Le connessioni intra-layer sono rappresentate da blocchi sulla diagonale principale della matrice, mentre le connessioni inter-layer possono essere rappresentate da blocchi fuori dalla diagonale.
 ```
 
+#Testing delle funzioni
+```{r}
+#Building multilayer networks
+SampleMultiplex <- GetSampleMultiplex(Layers, Nodes, 3)
+print(SampleMultiplex)
+```
+
+```{r}
+#Building multilayer networks
+ExtendedEdgelistFromSupraAdjacencyMatrix <- BuildExtendedEdgelistFromSupraAdjacencyMatrix(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  isDirected
+)
+print(ExtendedEdgelistFromSupraAdjacencyMatrix)
+```
+
+```{r}
+#Building multilayer networks
+SupraAdjacencyMatrixFromEdgeColoredMatricesTMP <- BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(
+  NodesTensor,
+  LayerTensor,
+  Layers,
+  Nodes
+)
+print(SupraAdjacencyMatrixFromEdgeColoredMatricesTMP)
+```
+
+```{r}
+#Building multilayer networks
+SupraAdjacencyToBlockTensortmp <- SupraAdjacencyToBlockTensor(SupraAdjacencyMatrix, Layers, Nodes)
+print(SupraAdjacencyToBlockTensortmp)
+```
+
+```{r}
+#Building multilayer networks
+print(SupraAdjacencyToNetworkList(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+#Building multilayer networks
+print(SupraAdjacencyToNodesTensor(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+#Aggregation functions
+print(GetAggregateMatrix(NodesTensor, Layers, Nodes))
+```
+```{r}
+print(GetAggregateMatrixFromNetworkList(sottografi))
+```
+
+```{r}
+#Aggregation functions
+GetAggregateMatrixFromSupraAdjacencyMatrix(SupraAdjacencyMatrix, Layers, Nodes)
+```
+
+```{r}
+print(GetAggregateNetworkFromNetworkList(sottografi))
+```
+
+```{r}
+print(GetAggregateNetworkFromSupraAdjacencyMatrix(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes
+))
+```
+
+# Centralities
+```{r}
+print(GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiClosenessCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiDegree(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiDegreeSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+MultiEigenvectorCentrality <- GetMultiEigenvectorCentrality(SupraAdjacencyMatrix, Layers, Nodes)
+```
+
+```{r}
+print(GetMultiHubCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiInDegree(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiInDegreeSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiInStrength(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiInStrengthSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiKCoreCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+MultiKatzCentrality <- GetMultiKatzCentrality(SupraAdjacencyMatrix, Layers, Nodes)
+```
+
+```{r}
+print(GetMultiOutDegree(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiOutDegreeSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiOutStrength(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiOutStrengthSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiPageRankCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiPathStatistics(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiRWCentrality(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  Type = "classical",
+  Method = "multilayer"
+))
+```
+
+```{r}
+print(GetMultiStrength(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiStrengthSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+```
+
+```{r}
+print(GetMultiplexityCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetGiantIntersectionComponentFromNetworkList(sottografi))
+```
+
+```{r}
+print(GetGiantViableComponent(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetGiantViableComponentFromNetworkList(sottografi))
+```
+
+```{r}
+MultilayerCommunities_Infomap = GetMultilayerCommunities_Infomap(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  bin.path = NA, #bin.path path, full path where the INFOMAP binary executable is located, (non so cosa sia INFOMAP e nella documentazione non è presente)
+  isDirected,
+  seed = 12345,
+  includeSelfLinks = F,
+  numTrials = 100,
+  twoLevel = T,
+  preclusterMultiplex = F,
+  addMissingPhysicalNodes = T,
+  hardPartitions = F,
+  verbose = T,
+  addAggregateAnalysis = T,
+  outputPrefix = "multimap"
+)
+print()
+```
+
+```{r}
+print(GetMultiplexCommunities_Infomap(
+  g.list,
+  bin.path = NA,
+  isDirected,
+  seed = 12345,
+  includeSelfLinks = F,
+  numTrials = 100,
+  twoLevel = T,
+  preclusterMultiplex = F,
+  addMissingPhysicalNodes = T,
+  hardPartitions = F,
+  verbose = T,
+  addAggregateAnalysis = T,
+  multilayerRelaxRate = NA,
+  multilayerJSRelaxRate = NA,
+  outputPrefix = "multimap"
+))
+```
+
+```{r}
+print(GetMultilayerMotifs(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  bin.path = NA,
+  motifSize = 3,
+  motifSamples = 1e+05,
+  isDirected = FALSE,
+  motifNullModel = "Local const",
+  randomNetworks = 1000,
+  randomExchangePerEdges = 3,
+  randomExchangeAttempts = 3
+))
+```
+
+```{r}
+print(GetMultilayerMotifsFromNetworkList(
+  g.list,
+  bin.path = NA,
+  motifSize = 3,
+  motifSamples = 1e+05,
+  isDirected = FALSE,
+  motifNullModel = "Local const",
+  randomNetworks = 1000,
+  randomExchangePerEdges = 3,
+  randomExchangeAttempts = 3
+))
+```
+
+```{r}
+print(GetMonoplexTriads(grafo))
+```
+
+```{r}
+print(GetMultiplexTriads(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetMultiplexTriadsFromNetworkList(sottografi, g.agg = NULL, verbose = T))
+```
+
+```{r}
+print(GetGlobalNumberTriangles(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetAverageGlobalNodeOverlappingMatrix(SupraAdjacencyMatrix, Layers, Nodes))
+```
+
+```{r}
+print(GetAverageGlobalOverlapping(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  fastBinary = F
+)
+)
+```
+
+```{r}
+print(GetAverageGlobalOverlappingMatrix(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  fastBinary = F
+))
+```
+
+```{r}
+print(BuildSupraTransitionMatrixFromSupraAdjacencyMatrix(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  Type = "pagerank",
+  r = NULL
+))
+```
+
+```{r}
+print(BuildTransitionMatrixFromEdgeColoredMatrices(
+  NodesTensor,
+  Layers,
+  Nodes,
+  Type = "classical"
+))
+```
+
+#ALTRO
 ```{r}
 #Get the nodes in the largest connected component
 lcc <- GetGiantConnectedComponent(M, Layers, Nodes)
@@ -233,23 +559,21 @@ AggregateNetworkFromSupraAdjacencyMatrix <- GetAggregateNetworkFromSupraAdjacenc
 ```{r}
 #Centralities
 
-Multi-Authority-Centrality <- GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes) #Calculates Multi-Authority-Centrality Avvertimento: sparse->dense coercion: allocating vector of size 7.7 GiBErrore: non è possibile allocare un vettore di dimensione 3.8 Gb
+MultiAuthorityCentrality <- GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes) # Not Working
 ```
 
 ```{r}
 #Mesoscale structures
 SupraAdjacencyMatrix <- M
 # Describing and anlysis the mescoscale structure of multilayer networks.
-connectedComponents = GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes) #Return the component assignment for each node
+connectedComponents <- GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes) #Return the component assignment for each node
 GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component
 
 GiantIntersectionComponent <- GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes) #Return the largest connected component obtained by intersecting LCC of each layer. Assumption: the network is an edge-colored multigraph
-```
 
-```{r}
-#layoutMultiplex(g.list, layout = "fr", ggplot.format = F, box = T)
-plot_multiplex(g.list, layer.colors, edge.colors = "black", node.colors = "auto",
-   node.size.values = 0.1, node.alpha = 0.1, edge.alpha = 1, layout = "fr", show.legend = T)
+cat(SupraAdjacencyMatrix)
+cat(connectedComponents)
+cat(GiantIntersectionComponent)
 ```
 
 ```{r}
@@ -269,4 +593,10 @@ cat(AverageGlobalClustering)
 ```{r}
 AverageGlobalNodeOverlappingMatrix <- GetAverageGlobalNodeOverlappingMatrix(SupraAdjacencyMatrix, Layers, Nodes)
 cat(AverageGlobalNodeOverlappingMatrix)
+```
+
+```{r}
+#layoutMultiplex(g.list, layout = "fr", ggplot.format = F, box = T)
+plot_multiplex(g.list, layer.colors, edge.colors = "black", node.colors = "auto",
+   node.size.values = 0.1, node.alpha = 0.1, edge.alpha = 1, layout = "fr", show.legend = T)
 ```
