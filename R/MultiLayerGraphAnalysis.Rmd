@@ -176,6 +176,7 @@ g.list <- sottografi
 for(l in 1:Layers){
   nodeTensor[[l]] <- igraph::get.adjacency(g.list[[l]])
 }
+NodesTensor <- nodeTensor
 ```
 
 ```{r}
@@ -198,11 +199,11 @@ isDirected = F
 #Una matrice di adiacenza supra o "supra-adjacency matrix" è un modo per rappresentare un grafo multistrato in una singola matrice quadrata. In pratica, è una matrice di adiacenza che combina le informazioni di tutti gli strati in un'unica struttura. Questa matrice è divisa in blocchi in modo tale che ogni blocco rappresenti le connessioni intra-layer o inter-layer. Le connessioni intra-layer sono rappresentate da blocchi sulla diagonale principale della matrice, mentre le connessioni inter-layer possono essere rappresentate da blocchi fuori dalla diagonale.
 ```
 
-#Testing delle funzioni
+# Testing delle funzioni
+
 ```{r}
 #Building multilayer networks
-SampleMultiplex <- GetSampleMultiplex(Layers, Nodes, 3)
-print(SampleMultiplex)
+GetSampleMultiplex(Layers, Nodes, 3)
 ```
 
 ```{r}
@@ -213,42 +214,40 @@ ExtendedEdgelistFromSupraAdjacencyMatrix <- BuildExtendedEdgelistFromSupraAdjace
   Nodes,
   isDirected
 )
-print(ExtendedEdgelistFromSupraAdjacencyMatrix)
 ```
 
 ```{r}
 #Building multilayer networks
-SupraAdjacencyMatrixFromEdgeColoredMatricesTMP <- BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(
+BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(
   NodesTensor,
   LayerTensor,
   Layers,
   Nodes
 )
-print(SupraAdjacencyMatrixFromEdgeColoredMatricesTMP)
 ```
 
 ```{r}
 #Building multilayer networks
-SupraAdjacencyToBlockTensortmp <- SupraAdjacencyToBlockTensor(SupraAdjacencyMatrix, Layers, Nodes)
-print(SupraAdjacencyToBlockTensortmp)
+SupraAdjacencyToBlockTensor(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
 #Building multilayer networks
-print(SupraAdjacencyToNetworkList(SupraAdjacencyMatrix, Layers, Nodes))
+SupraAdjacencyToNetworkList(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
 #Building multilayer networks
-print(SupraAdjacencyToNodesTensor(SupraAdjacencyMatrix, Layers, Nodes))
+SupraAdjacencyToNodesTensor(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
 #Aggregation functions
-print(GetAggregateMatrix(NodesTensor, Layers, Nodes))
+GetAggregateMatrix(NodesTensor, Layers, Nodes)
 ```
+
 ```{r}
-print(GetAggregateMatrixFromNetworkList(sottografi))
+GetAggregateMatrixFromNetworkList(sottografi)
 ```
 
 ```{r}
@@ -257,20 +256,21 @@ GetAggregateMatrixFromSupraAdjacencyMatrix(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetAggregateNetworkFromNetworkList(sottografi))
+GetAggregateNetworkFromNetworkList(sottografi)
 ```
 
 ```{r}
-print(GetAggregateNetworkFromSupraAdjacencyMatrix(
+GetAggregateNetworkFromSupraAdjacencyMatrix(
   SupraAdjacencyMatrix,
   Layers,
   Nodes
-))
+)
 ```
 
 # Centralities
+
 ```{r}
-print(GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+GetMultiAuthCentrality(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
@@ -338,53 +338,53 @@ print(GetMultiPageRankCentrality(SupraAdjacencyMatrix, Layers, Nodes))
 ```
 
 ```{r}
-print(GetMultiPathStatistics(SupraAdjacencyMatrix, Layers, Nodes))
+GetMultiPathStatistics(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetMultiRWCentrality(
+GetMultiRWCentrality(
   SupraAdjacencyMatrix,
   Layers,
   Nodes,
   Type = "classical",
   Method = "multilayer"
-))
+)
 ```
 
 ```{r}
-print(GetMultiStrength(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+GetMultiStrength(SupraAdjacencyMatrix, Layers, Nodes, isDirected)
 ```
 
 ```{r}
-print(GetMultiStrengthSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected))
+GetMultiStrengthSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected)
 ```
 
 ```{r}
-print(GetMultiplexityCentrality(SupraAdjacencyMatrix, Layers, Nodes))
+GetMultiplexityCentrality(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes))
+GetConnectedComponents(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes))
+GetGiantConnectedComponent(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes))
+GetGiantIntersectionComponent(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetGiantIntersectionComponentFromNetworkList(sottografi))
+GetGiantIntersectionComponentFromNetworkList(sottografi)
 ```
 
 ```{r}
-print(GetGiantViableComponent(SupraAdjacencyMatrix, Layers, Nodes))
+GetGiantViableComponent(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetGiantViableComponentFromNetworkList(sottografi))
+GetGiantViableComponentFromNetworkList(sottografi)
 ```
 
 ```{r}
@@ -405,7 +405,7 @@ MultilayerCommunities_Infomap = GetMultilayerCommunities_Infomap(
   addAggregateAnalysis = T,
   outputPrefix = "multimap"
 )
-print()
+
 ```
 
 ```{r}
@@ -459,68 +459,69 @@ print(GetMultilayerMotifsFromNetworkList(
 ```
 
 ```{r}
-print(GetMonoplexTriads(grafo))
+GetMonoplexTriads(grafo)
 ```
 
 ```{r}
-print(GetMultiplexTriads(SupraAdjacencyMatrix, Layers, Nodes))
+GetMultiplexTriads(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetMultiplexTriadsFromNetworkList(sottografi, g.agg = NULL, verbose = T))
+GetMultiplexTriadsFromNetworkList(sottografi, g.agg = NULL, verbose = T)
 ```
 
 ```{r}
-print(GetGlobalNumberTriangles(SupraAdjacencyMatrix, Layers, Nodes))
+GetGlobalNumberTriangles(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes))
+GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetAverageGlobalNodeOverlappingMatrix(SupraAdjacencyMatrix, Layers, Nodes))
+GetAverageGlobalNodeOverlappingMatrix(SupraAdjacencyMatrix, Layers, Nodes)
 ```
 
 ```{r}
-print(GetAverageGlobalOverlapping(
+GetAverageGlobalOverlapping(
   SupraAdjacencyMatrix,
   Layers,
   Nodes,
   fastBinary = F
 )
-)
+
 ```
 
 ```{r}
-print(GetAverageGlobalOverlappingMatrix(
+GetAverageGlobalOverlappingMatrix(
   SupraAdjacencyMatrix,
   Layers,
   Nodes,
   fastBinary = F
-))
+)
 ```
 
 ```{r}
-print(BuildSupraTransitionMatrixFromSupraAdjacencyMatrix(
+BuildSupraTransitionMatrixFromSupraAdjacencyMatrix(
   SupraAdjacencyMatrix,
   Layers,
   Nodes,
   Type = "pagerank",
   r = NULL
-))
+)
 ```
 
 ```{r}
-print(BuildTransitionMatrixFromEdgeColoredMatrices(
+BuildTransitionMatrixFromEdgeColoredMatrices(
   NodesTensor,
   Layers,
   Nodes,
   Type = "classical"
-))
+)
 ```
 
 #ALTRO
+
 ```{r}
 #Get the nodes in the largest connected component
 lcc <- GetGiantConnectedComponent(M, Layers, Nodes)
@@ -581,10 +582,12 @@ cat(GiantIntersectionComponent)
 GloblalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
 cat(GloblalClustering)
 ```
+
 ```{r}
 GlobalNumberTriangles <- GetGlobalNumberTriangles(SupraAdjacencyMatrix, Layers, Nodes)
 cat(GlobalNumberTriangles)
 ```
+
 ```{r}
 AverageGlobalClustering <- GetAverageGlobalClustering(SupraAdjacencyMatrix, Layers, Nodes)
 cat(AverageGlobalClustering)

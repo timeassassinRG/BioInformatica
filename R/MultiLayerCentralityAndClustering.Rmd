@@ -1,0 +1,199 @@
+---
+title: "Notebook"
+author: "Alessio Mezzina"
+date: "2024-03-26"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(ggraph)
+library(grid)
+library(igraph)
+library(muxViz)
+library(RColorBrewer)
+library(progress)
+
+rm(list = ls())
+#Lettura del grafo completo
+grafo <- read_graph("multilayer.graphml", format = "graphml")
+
+
+nodi_e_layer <- strsplit(V(grafo)$id, split = "', '", fixed = TRUE)
+nomi_nodi <- unique(sapply(nodi_e_layer, function(x) gsub("[()']", "", x[1])))
+tipi_layer <- unique(sapply(nodi_e_layer, function(x) gsub("[')]", "", x[2])))
+
+# Aggiungi un attributo 'name' a ciascun nodo nel grafo originale contenente solo il nome del gene
+V(grafo)$name <- sapply(V(grafo)$id, function(id) {
+  # Estrai solo il nome del gene dall'ID del nodo
+  nome_gene <- gsub("[()']", "", strsplit(id, ", ")[[1]][1])
+  nome_gene
+})
+
+# Prepara un set completo di nodi per ogni tipo di layer
+nodi_completi_per_layer <- expand.grid(nomi_nodi, tipi_layer)
+colnames(nodi_completi_per_layer) <- c("nome", "layer")
+
+sottografi <- list()
+for (layer in tipi_layer) {
+  # Crea un sottografo vuoto
+  sottografo <- make_empty_graph(n = length(nomi_nodi))
+  # Assegna i nomi dei nodi
+  V(sottografo)$name <- nomi_nodi
+  # Salva il sottografo inizializzato
+  sottografi[[layer]] <- sottografo
+}
+
+# precalcolo degli indici
+indice_nodi <- list()
+for(layer in tipi_layer) {
+  nomi_nodi_layer_specifici <- V(sottografi[[layer]])$name
+  indice_nodi[[layer]] <- setNames(seq_along(nomi_nodi_layer_specifici), nomi_nodi_layer_specifici)
+}
+
+# Imposta la directory in cui cercare/salvare i sottografi
+directory_salvataggio <- "./"
+
+# Inizializza la lista dei sottografi
+sottografi <- list()
+
+# Prova a caricare i sottografi esistenti per ogni layer
+caricati_con_successo <- TRUE
+for(layer in tipi_layer) {
+  percorso_file <- paste0(directory_salvataggio, "sottografo_", layer, ".graphml")
+  
+  if(file.exists(percorso_file)) {
+    sottografi[[layer]] <- read_graph(percorso_file, format = "graphml")
+  } else {
+    caricati_con_successo <- FALSE
+    break
+  }
+}
+
+# Se non tutti i sottografi sono stati caricati, esegui il ciclo for per generarli
+if(!caricati_con_successo) {
+  cat("Non tutti i sottografi esistono. Generazione dei sottografi in corso...\n")
+  
+  # (Re)inizializza i sottografi se necessario
+  # Questo passaggio dipende da come vuoi gestire la situazione in cui alcuni sottografi esistono e altri no
+  # Qui li reinizializziamo tutti per semplicità
+  sottografi <- list()
+  for(layer in tipi_layer) {
+    sottografo <- make_empty_graph(n = length(nomi_nodi))
+    V(sottografo)$name <- nomi_nodi
+    sottografi[[layer]] <- sottografo
+  }
+  
+  # Inserisci qui il codice per popolare i sottografi, come il ciclo for sopra
+  for(e in E(grafo)) {
+    if(e %% 100 == 0) {
+    cat("arco: ", e)
+  }
+  nodi_ends <- ends(grafo, e)
+  sorgente <- V(grafo)[nodi_ends[1]]$name
+  destinazione <- V(grafo)[nodi_ends[2]]$name
+  tipo_layer <- E(grafo)[e]$type
+  if(tipo_layer != "interlayer") {
+    indice_sorgente <- indice_nodi[[tipo_layer]][sorgente]
+    indice_destinazione <- indice_nodi[[tipo_layer]][destinazione]
+    sottografi[[tipo_layer]] <- add_edges(sottografi[[tipo_layer]], c(indice_sorgente, indice_destinazione))
+  }
+  }
+  
+  # Dopo la generazione, salva i nuovi sottografi per un uso futuro
+  for(layer in tipi_layer) {
+    percorso_file <- paste0(directory_salvataggio, "sottografo_", layer, ".graphml")
+    write_graph(sottografi[[layer]], percorso_file, format = "graphml")
+  }
+}
+```
+
+# Utilizzo di MuxVizR
+```{r}
+#Network setup
+Layers <- 3
+layerCouplingStrength <- 1
+networkOfLayersType <- "categorical"
+layer.colors <- brewer.pal(3, "Set2")
+
+nodeTensor <- list()
+g.list <- sottografi
+for(l in 1:Layers){
+  nodeTensor[[l]] <- igraph::as_adjacency_matrix(g.list[[l]])
+}
+NodesTensor <- nodeTensor
+
+#Define the network of layers
+layerTensor <-
+  BuildLayersTensor(
+    Layers = Layers,
+    OmegaParameter = layerCouplingStrength,
+    MultisliceType = networkOfLayersType
+  )
+layerLabels <- 1:Layers
+```
+
+```{r}
+#Build the multilayer adjacency tensor
+isDirected = F
+Nodes <- vcount(sottografi[[1]])  # Utilizza il primo sottografo come riferimento
+M <- BuildSupraAdjacencyMatrixFromEdgeColoredMatrices(nodeTensor, layerTensor, Layers, Nodes)
+SupraAdjacencyMatrix <- M
+```
+
+# Calcolo della centralità
+```{r}
+MultiDegree <- GetMultiDegree(SupraAdjacencyMatrix, Layers, Nodes, isDirected)
+```
+
+```{r}
+MultiDegreeSum <- GetMultiDegreeSum(SupraAdjacencyMatrix, Layers, Nodes, isDirected)
+```
+
+```{r}
+MultiPageRankCentrality <- GetMultiPageRankCentrality(SupraAdjacencyMatrix, Layers, Nodes)
+```
+
+# Clustering
+```{r}
+pathInfomap <- "C:/Users/Alessio/Desktop/BioInformatica/R/Infomap.exe"
+MultilayerCommunities_Infomap <- GetMultilayerCommunities_Infomap(
+  SupraAdjacencyMatrix,
+  Layers,
+  Nodes,
+  bin.path = pathInfomap,
+  isDirected,
+  seed = 12345,
+  includeSelfLinks = F,
+  numTrials = 100,
+  twoLevel = T,
+  preclusterMultiplex = F,
+  addMissingPhysicalNodes = T,
+  hardPartitions = F,
+  verbose = T,
+  addAggregateAnalysis = T,
+  outputPrefix = "multimap"
+)
+```
+
+```{r}
+MultiplexCommunities_Infomap <- GetMultiplexCommunities_Infomap(
+  g.list,
+  bin.path = pathInfomap,
+  isDirected,
+  seed = 12345,
+  includeSelfLinks = F,
+  numTrials = 100,
+  twoLevel = T,
+  preclusterMultiplex = F,
+  addMissingPhysicalNodes = T,
+  hardPartitions = F,
+  verbose = T,
+  addAggregateAnalysis = T,
+  multilayerRelaxRate = NA,
+  multilayerJSRelaxRate = NA,
+  outputPrefix = "multimap"
+)
+```
+
+# Data Visualization and Plotting
