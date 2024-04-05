@@ -2,8 +2,14 @@
 title: "Notebook"
 author: "Alessio Mezzina"
 date: "2024-03-26"
-output: html_document
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
 ---
+```{r}
+rm(list = ls())
+```
 
 ```{r}
 library(ggplot2)
@@ -12,9 +18,11 @@ library(grid)
 library(igraph)
 library(muxViz)
 library(RColorBrewer)
-library(progress)
+library(viridis)
 
-rm(list = ls())
+```
+
+```{r}
 #Lettura del grafo completo
 grafo <- read_graph("multilayer.graphml", format = "graphml")
 
@@ -156,7 +164,7 @@ MultiPageRankCentrality <- GetMultiPageRankCentrality(SupraAdjacencyMatrix, Laye
 
 # Clustering
 ```{r}
-pathInfomap <- "C:/Users/Alessio/Desktop/BioInformatica/R/Infomap.exe"
+pathInfomap <- "./Infomap"
 MultilayerCommunities_Infomap <- GetMultilayerCommunities_Infomap(
   SupraAdjacencyMatrix,
   Layers,
@@ -175,25 +183,130 @@ MultilayerCommunities_Infomap <- GetMultilayerCommunities_Infomap(
   outputPrefix = "multimap"
 )
 ```
+# Data Visualization and Plotting
 
 ```{r}
-MultiplexCommunities_Infomap <- GetMultiplexCommunities_Infomap(
-  g.list,
-  bin.path = pathInfomap,
-  isDirected,
-  seed = 12345,
-  includeSelfLinks = F,
-  numTrials = 100,
-  twoLevel = T,
-  preclusterMultiplex = F,
-  addMissingPhysicalNodes = T,
-  hardPartitions = F,
-  verbose = T,
-  addAggregateAnalysis = T,
-  multilayerRelaxRate = NA,
-  multilayerJSRelaxRate = NA,
-  outputPrefix = "multimap"
-)
+print(MultiDegree)
+print(MultiDegreeSum)
+print(MultiPageRankCentrality)
+print(MultilayerCommunities_Infomap)
 ```
 
-# Data Visualization and Plotting
+```{r}
+g <- sottografi[[1]]
+
+V(g)$centralita <- MultiDegree
+
+# Ora, per visualizzare il grafo con ggraph:
+library(ggraph)
+library(igraph)
+
+# Utilizza un layout che preferisci, ad esempio 'fr' per Fruchterman-Reingold
+ggraph(g, layout = "fr") +
+  geom_edge_link(color = "gray50", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(size = centralita), alpha = 0.8, color = "steelblue") + # Dimensioni dei nodi basate sulla centralità
+  geom_node_text(aes(label = name), vjust = 1.5, size = 3, color = "darkred") + # Opzionale: aggiunge etichette ai nodi
+  scale_size(range = c(1, 10)) + # Adatta questo per controllare il range di dimensioni dei nodi
+  theme_void() + # Rimuove elementi non necessari dallo sfondo
+  labs(title = "Visualizzazione del Grafo con Centralità dei Nodi")
+
+
+ggraph(g, layout = "fr") +
+  geom_edge_link(color = "gray50", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(size = centralita), alpha = 0.8, color = "steelblue") + # Dimensioni dei nodi basate sulla centralità
+  scale_size(range = c(1, 10)) + # Adatta questo per controllare il range di dimensioni dei nodi
+  theme_void() + # Rimuove elementi non necessari dallo sfondo
+  labs(title = "Visualizzazione del Grafo con Centralità dei Nodi")
+```
+```{r}
+# Utilizza un layout che aiuti a evitare la sovrapposizione
+ggraph(g, layout = 'fr') +
+  geom_edge_link(color = "gray50", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(size = centralita), alpha = 0.8, color = "steelblue") + # Dimensioni dei nodi basate sulla centralità
+  geom_node_text(aes(label = etichetta), check_overlap = TRUE, vjust = 1.5, size = 3, color = "darkred", na.rm = TRUE) + # Etichette solo per nodi selezionati
+  scale_size(range = c(1, 10)) + # Adatta questo per controllare il range di dimensioni dei nodi
+  theme_void() + # Rimuove elementi non necessari dallo sfondo
+  labs(title = "Visualizzazione del Grafo con Centralità dei Nodi")
+```
+
+```{r}
+library(tidyverse)
+
+# Trasforma MultiDegree in un dataframe
+df_centralita <- as.data.frame(MultiDegree) %>%
+  rownames_to_column(var = "Nodo") %>%
+  pivot_longer(cols = -Nodo, names_to = "Layer", values_to = "Centralità")
+
+# Plotta il grafico a barre
+ggplot(df_centralita, aes(x = Nodo, y = Centralità, fill = Layer)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_minimal() +
+  labs(title = "Centralità MultiDegree per Nodo e Layer",
+       x = "Nodo",
+       y = "Centralità") +
+  scale_fill_viridis_d()
+
+```
+
+```{r}
+# Converti 'MultilayerCommunities_Infomap$membership.multi' in un dataframe per la manipolazione
+community_data <- as.data.frame(MultilayerCommunities_Infomap$membership.multi)
+
+# Rinomina le colonne per chiarezza, se necessario
+community_data <- rename(community_data, Comunità = module, Nodo = node, Layer = layer)
+
+# Poiché abbiamo più sottografi, potresti voler aggiungere l'informazione della comunità a ogni nodo in ogni layer.
+# Nota: Questo esempio assume che l'ID del nodo e il layer siano coerenti attraverso i sottografi.
+for(layer in names(sottografi)) {
+  for(i in seq_len(vcount(sottografi[[layer]]))) {
+    nodo_name <- V(sottografi[[layer]])[i]$name
+    layer_number <- which(names(sottografi) == layer)
+    
+    # Trova la comunità del nodo corrente basandosi su 'node' e 'layer'
+    comunità_nodo <- community_data$Comunità[community_data$Nodo == i & community_data$Layer == layer_number]
+    
+    if(length(comunità_nodo) > 0) {
+      V(sottografi[[layer]])[i]$community <- comunità_nodo
+    } else {
+      V(sottografi[[layer]])[i]$community <- NA # Assign NA se il nodo non ha una comunità assegnata in questo layer
+    }
+  }
+}
+
+# Ora puoi visualizzare uno dei sottografi con le comunità colorate
+library(ggraph)
+library(igraph)
+
+g <- sottografi[[1]] # Scegli quale layer visualizzare
+
+ggraph(g, layout = 'fr') +
+  geom_edge_link(color = "gray80", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(color = as.factor(community)), size = 5, alpha = 0.8) + # Regola la dimensione e l'opacità dei nodi
+  geom_node_text(aes(label = name), vjust = 1.8, size = 0.5, color = "black") + # Aggiungi etichette con una leggera regolazione verticale
+  scale_color_viridis_d() + # Utilizza una scala di colori distintiva
+  theme_graph(base_size = 12) + # Imposta la dimensione base del testo per il grafico
+  labs(color = "Comunità") + # Etichetta la legenda
+  ggtitle("Visualizzazione del Grafo Multilayer [Expression] con Comunità e Nomi dei Nodi") # Titolo del grafico
+
+g <- sottografi[[2]] # Scegli quale layer visualizzare
+
+ggraph(g, layout = 'fr') +
+  geom_edge_link(color = "gray80", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(color = as.factor(community)), size = 5, alpha = 0.8) + # Regola la dimensione e l'opacità dei nodi
+  geom_node_text(aes(label = name), vjust = 1.8, size = 0.5, color = "black") + # Aggiungi etichette con una leggera regolazione verticale
+  scale_color_viridis_d() + # Utilizza una scala di colori distintiva
+  theme_graph(base_size = 12) + # Imposta la dimensione base del testo per il grafico
+  labs(color = "Comunità") + # Etichetta la legenda
+  ggtitle("Visualizzazione del Grafo Multilayer [Methylation] con Comunità e Nomi dei Nodi") # Titolo del grafico
+
+g <- sottografi[[3]] # visualizer quale layer visualizzare
+
+ggraph(g, layout = 'fr') +
+  geom_edge_link(color = "gray80", alpha = 0.5) + # Rendi gli archi meno dominanti
+  geom_node_point(aes(color = as.factor(community)), size = 5, alpha = 0.8) + # Regola la dimensione e l'opacità dei nodi
+  geom_node_text(aes(label = name), vjust = 1.8, size = 0.5, color = "black") + # Aggiungi etichette con una leggera regolazione verticale
+  scale_color_viridis_d() + # Utilizza una scala di colori distintiva
+  theme_graph(base_size = 12) + # Imposta la dimensione base del testo per il grafico
+  labs(color = "Comunità") + # Etichetta la legenda
+  ggtitle("Visualizzazione del Grafo Multilayer [Mutation] con Comunità e Nomi dei Nodi") # Titolo del grafico
+```
